@@ -1,5 +1,5 @@
 //
-//  HenchmanGroup+CoreDataProperties.m
+//  CardSet+CoreDataProperties.m
 //  Legendary_Jarvis
 //
 //  Created by Georgi Bachvarov on 1/12/16.
@@ -9,10 +9,10 @@
 //  to delete and recreate this implementation file for your updated model.
 //
 
-#import "HenchmanGroup+CoreDataProperties.h"
+#import "CardSet+CoreDataProperties.h"
 
-@implementation HenchmanGroup (CoreDataProperties)
+@implementation CardSet (CoreDataProperties)
 
-@dynamic expansion;
+@dynamic partOfSchemeRules;
 
 @end

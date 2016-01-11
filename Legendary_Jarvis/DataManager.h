@@ -16,6 +16,7 @@
 #import "DisplayableEntity.h"
 #import "EnemyGroup.h"
 #import "Scheme.h"
+#import "SchemeRule.h"
 
 @interface DataManager : NSObject
 

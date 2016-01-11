@@ -1,19 +1,15 @@
 //
-//  Expansion.m
+//  CardSet.m
 //  Legendary_Jarvis
 //
 //  Created by Georgi Bachvarov on 1/12/16.
 //  Copyright © 2016 Georgi Bachvarov. All rights reserved.
 //
 
-#import "Expansion.h"
-#import "HenchmanGroup.h"
-#import "Hero.h"
-#import "Mastermind.h"
-#import "Scheme.h"
-#import "VillainGroup.h"
+#import "CardSet.h"
+#import "SchemeRule.h"
 
-@implementation Expansion
+@implementation CardSet
 
 // Insert code here to add functionality to your managed object subclass
 

@@ -1,5 +1,5 @@
 //
-//  HenchmanGroup+CoreDataProperties.m
+//  SchemeRule+CoreDataProperties.m
 //  Legendary_Jarvis
 //
 //  Created by Georgi Bachvarov on 1/12/16.
@@ -9,10 +9,13 @@
 //  to delete and recreate this implementation file for your updated model.
 //
 
-#import "HenchmanGroup+CoreDataProperties.h"
+#import "SchemeRule+CoreDataProperties.h"
 
-@implementation HenchmanGroup (CoreDataProperties)
+@implementation SchemeRule (CoreDataProperties)
 
-@dynamic expansion;
+@dynamic objectCount;
+@dynamic ruleType;
+@dynamic objects;
+@dynamic scheme;
 
 @end

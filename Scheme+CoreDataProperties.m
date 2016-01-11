@@ -2,7 +2,7 @@
 //  Scheme+CoreDataProperties.m
 //  Legendary_Jarvis
 //
-//  Created by Georgi Bachvarov on 1/11/16.
+//  Created by Georgi Bachvarov on 1/12/16.
 //  Copyright © 2016 Georgi Bachvarov. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -13,9 +13,7 @@
 
 @implementation Scheme (CoreDataProperties)
 
-@dynamic extraHenchmanGroups;
-@dynamic extraVillainGroups;
 @dynamic expansion;
-@dynamic mandatoryEnemyGroups;
+@dynamic rules;
 
 @end

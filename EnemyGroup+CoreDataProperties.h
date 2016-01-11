@@ -2,7 +2,7 @@
 //  EnemyGroup+CoreDataProperties.h
 //  Legendary_Jarvis
 //
-//  Created by Georgi Bachvarov on 1/11/16.
+//  Created by Georgi Bachvarov on 1/12/16.
 //  Copyright © 2016 Georgi Bachvarov. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -15,22 +15,16 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface EnemyGroup (CoreDataProperties)
 
-@property (nullable, nonatomic, retain) NSSet<NSManagedObject *> *alwaysLeadBy;
-@property (nullable, nonatomic, retain) NSSet<NSManagedObject *> *alwaysInSchemes;
+@property (nullable, nonatomic, retain) NSSet<Mastermind *> *alwaysLeadBy;
 
 @end
 
 @interface EnemyGroup (CoreDataGeneratedAccessors)
 
-- (void)addAlwaysLeadByObject:(NSManagedObject *)value;
-- (void)removeAlwaysLeadByObject:(NSManagedObject *)value;
-- (void)addAlwaysLeadBy:(NSSet<NSManagedObject *> *)values;
-- (void)removeAlwaysLeadBy:(NSSet<NSManagedObject *> *)values;
-
-- (void)addAlwaysInSchemesObject:(NSManagedObject *)value;
-- (void)removeAlwaysInSchemesObject:(NSManagedObject *)value;
-- (void)addAlwaysInSchemes:(NSSet<NSManagedObject *> *)values;
-- (void)removeAlwaysInSchemes:(NSSet<NSManagedObject *> *)values;
+- (void)addAlwaysLeadByObject:(Mastermind *)value;
+- (void)removeAlwaysLeadByObject:(Mastermind *)value;
+- (void)addAlwaysLeadBy:(NSSet<Mastermind *> *)values;
+- (void)removeAlwaysLeadBy:(NSSet<Mastermind *> *)values;
 
 @end
 

@@ -1,5 +1,5 @@
 //
-//  VillainGroup.h
+//  CardSet.h
 //  Legendary_Jarvis
 //
 //  Created by Georgi Bachvarov on 1/12/16.
@@ -7,13 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "EnemyGroup.h"
+#import "DisplayableEntity.h"
 
-@class Expansion;
+@class SchemeRule;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface VillainGroup : EnemyGroup
+@interface CardSet : DisplayableEntity
 
 // Insert code here to declare functionality of your managed object subclass
 
@@ -21,4 +21,4 @@ NS_ASSUME_NONNULL_BEGIN
 
 NS_ASSUME_NONNULL_END
 
-#import "VillainGroup+CoreDataProperties.h"
+#import "CardSet+CoreDataProperties.h"

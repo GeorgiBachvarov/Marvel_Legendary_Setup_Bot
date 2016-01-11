@@ -2,7 +2,7 @@
 //  DisplayableEntity.m
 //  Legendary_Jarvis
 //
-//  Created by Georgi Bachvarov on 1/11/16.
+//  Created by Georgi Bachvarov on 1/12/16.
 //  Copyright © 2016 Georgi Bachvarov. All rights reserved.
 //
 
@@ -16,6 +16,16 @@
     
     self = [self initWithEntity:entityDescription insertIntoManagedObjectContext:[[DataManager sharedInstance] managedObjectContext]];
     
+    return self;
+}
+
+- (instancetype)initWithDisplayName:(NSString *)displayName insertIntoExpansion:(Expansion *)expansion{
+    self = [self initWithDisplayName:displayName];
+    if (self) {
+        if ([self respondsToSelector:@selector(setExpansion:)]){
+            [self performSelector:@selector(setExpansion:) withObject:expansion];
+        }
+    }
     return self;
 }
 
