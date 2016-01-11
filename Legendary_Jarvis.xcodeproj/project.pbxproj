@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		563E91851C4420A200BD794F /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E91841C4420A200BD794F /* DataManager.m */; };
+		563E91881C44243F00BD794F /* DataBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E91871C44243F00BD794F /* DataBuilder.m */; };
+		563E91A91C4426C000BD794F /* EnemyGroup+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E918A1C4426C000BD794F /* EnemyGroup+CoreDataProperties.m */; };
+		563E91AA1C4426C000BD794F /* EnemyGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E918C1C4426C000BD794F /* EnemyGroup.m */; };
+		563E91AB1C4426C000BD794F /* Hero+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E918E1C4426C000BD794F /* Hero+CoreDataProperties.m */; };
+		563E91AC1C4426C000BD794F /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E91901C4426C000BD794F /* Hero.m */; };
+		563E91AD1C4426C000BD794F /* DisplayableEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E91921C4426C000BD794F /* DisplayableEntity+CoreDataProperties.m */; };
+		563E91AE1C4426C000BD794F /* DisplayableEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E91941C4426C000BD794F /* DisplayableEntity.m */; };
+		563E91AF1C4426C000BD794F /* VillainGroup+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E91961C4426C000BD794F /* VillainGroup+CoreDataProperties.m */; };
+		563E91B01C4426C000BD794F /* VillainGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E91981C4426C000BD794F /* VillainGroup.m */; };
+		563E91B11C4426C000BD794F /* HenchmanGroup+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E919A1C4426C000BD794F /* HenchmanGroup+CoreDataProperties.m */; };
+		563E91B21C4426C000BD794F /* HenchmanGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E919C1C4426C000BD794F /* HenchmanGroup.m */; };
+		563E91B31C4426C000BD794F /* Mastermind+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E919E1C4426C000BD794F /* Mastermind+CoreDataProperties.m */; };
+		563E91B41C4426C000BD794F /* Mastermind.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E91A01C4426C000BD794F /* Mastermind.m */; };
+		563E91B51C4426C000BD794F /* Scheme+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E91A21C4426C000BD794F /* Scheme+CoreDataProperties.m */; };
+		563E91B61C4426C000BD794F /* Scheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E91A41C4426C000BD794F /* Scheme.m */; };
+		563E91B71C4426C000BD794F /* Expansion+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E91A61C4426C000BD794F /* Expansion+CoreDataProperties.m */; };
+		563E91B81C4426C000BD794F /* Expansion.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E91A81C4426C000BD794F /* Expansion.m */; };
 		56D2FFBD1C3ECD66002DD3A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D2FFBC1C3ECD66002DD3A2 /* main.m */; };
 		56D2FFC01C3ECD66002DD3A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D2FFBF1C3ECD66002DD3A2 /* AppDelegate.m */; };
 		56D2FFC31C3ECD66002DD3A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D2FFC21C3ECD66002DD3A2 /* ViewController.m */; };
@@ -17,6 +35,42 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		563E91831C4420A200BD794F /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		563E91841C4420A200BD794F /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		563E91861C44243F00BD794F /* DataBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBuilder.h; sourceTree = "<group>"; };
+		563E91871C44243F00BD794F /* DataBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBuilder.m; sourceTree = "<group>"; };
+		563E91891C4426C000BD794F /* EnemyGroup+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "EnemyGroup+CoreDataProperties.h"; path = "../EnemyGroup+CoreDataProperties.h"; sourceTree = "<group>"; };
+		563E918A1C4426C000BD794F /* EnemyGroup+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "EnemyGroup+CoreDataProperties.m"; path = "../EnemyGroup+CoreDataProperties.m"; sourceTree = "<group>"; };
+		563E918B1C4426C000BD794F /* EnemyGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EnemyGroup.h; path = ../EnemyGroup.h; sourceTree = "<group>"; };
+		563E918C1C4426C000BD794F /* EnemyGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EnemyGroup.m; path = ../EnemyGroup.m; sourceTree = "<group>"; };
+		563E918D1C4426C000BD794F /* Hero+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Hero+CoreDataProperties.h"; path = "../Hero+CoreDataProperties.h"; sourceTree = "<group>"; };
+		563E918E1C4426C000BD794F /* Hero+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Hero+CoreDataProperties.m"; path = "../Hero+CoreDataProperties.m"; sourceTree = "<group>"; };
+		563E918F1C4426C000BD794F /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hero.h; path = ../Hero.h; sourceTree = "<group>"; };
+		563E91901C4426C000BD794F /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Hero.m; path = ../Hero.m; sourceTree = "<group>"; };
+		563E91911C4426C000BD794F /* DisplayableEntity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "DisplayableEntity+CoreDataProperties.h"; path = "../DisplayableEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		563E91921C4426C000BD794F /* DisplayableEntity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "DisplayableEntity+CoreDataProperties.m"; path = "../DisplayableEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
+		563E91931C4426C000BD794F /* DisplayableEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DisplayableEntity.h; path = ../DisplayableEntity.h; sourceTree = "<group>"; };
+		563E91941C4426C000BD794F /* DisplayableEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DisplayableEntity.m; path = ../DisplayableEntity.m; sourceTree = "<group>"; };
+		563E91951C4426C000BD794F /* VillainGroup+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "VillainGroup+CoreDataProperties.h"; path = "../VillainGroup+CoreDataProperties.h"; sourceTree = "<group>"; };
+		563E91961C4426C000BD794F /* VillainGroup+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "VillainGroup+CoreDataProperties.m"; path = "../VillainGroup+CoreDataProperties.m"; sourceTree = "<group>"; };
+		563E91971C4426C000BD794F /* VillainGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VillainGroup.h; path = ../VillainGroup.h; sourceTree = "<group>"; };
+		563E91981C4426C000BD794F /* VillainGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VillainGroup.m; path = ../VillainGroup.m; sourceTree = "<group>"; };
+		563E91991C4426C000BD794F /* HenchmanGroup+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "HenchmanGroup+CoreDataProperties.h"; path = "../HenchmanGroup+CoreDataProperties.h"; sourceTree = "<group>"; };
+		563E919A1C4426C000BD794F /* HenchmanGroup+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "HenchmanGroup+CoreDataProperties.m"; path = "../HenchmanGroup+CoreDataProperties.m"; sourceTree = "<group>"; };
+		563E919B1C4426C000BD794F /* HenchmanGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HenchmanGroup.h; path = ../HenchmanGroup.h; sourceTree = "<group>"; };
+		563E919C1C4426C000BD794F /* HenchmanGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HenchmanGroup.m; path = ../HenchmanGroup.m; sourceTree = "<group>"; };
+		563E919D1C4426C000BD794F /* Mastermind+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Mastermind+CoreDataProperties.h"; path = "../Mastermind+CoreDataProperties.h"; sourceTree = "<group>"; };
+		563E919E1C4426C000BD794F /* Mastermind+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Mastermind+CoreDataProperties.m"; path = "../Mastermind+CoreDataProperties.m"; sourceTree = "<group>"; };
+		563E919F1C4426C000BD794F /* Mastermind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mastermind.h; path = ../Mastermind.h; sourceTree = "<group>"; };
+		563E91A01C4426C000BD794F /* Mastermind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mastermind.m; path = ../Mastermind.m; sourceTree = "<group>"; };
+		563E91A11C4426C000BD794F /* Scheme+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Scheme+CoreDataProperties.h"; path = "../Scheme+CoreDataProperties.h"; sourceTree = "<group>"; };
+		563E91A21C4426C000BD794F /* Scheme+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Scheme+CoreDataProperties.m"; path = "../Scheme+CoreDataProperties.m"; sourceTree = "<group>"; };
+		563E91A31C4426C000BD794F /* Scheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Scheme.h; path = ../Scheme.h; sourceTree = "<group>"; };
+		563E91A41C4426C000BD794F /* Scheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Scheme.m; path = ../Scheme.m; sourceTree = "<group>"; };
+		563E91A51C4426C000BD794F /* Expansion+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Expansion+CoreDataProperties.h"; path = "../Expansion+CoreDataProperties.h"; sourceTree = "<group>"; };
+		563E91A61C4426C000BD794F /* Expansion+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Expansion+CoreDataProperties.m"; path = "../Expansion+CoreDataProperties.m"; sourceTree = "<group>"; };
+		563E91A71C4426C000BD794F /* Expansion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Expansion.h; path = ../Expansion.h; sourceTree = "<group>"; };
+		563E91A81C4426C000BD794F /* Expansion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Expansion.m; path = ../Expansion.m; sourceTree = "<group>"; };
 		56D2FFB81C3ECD66002DD3A2 /* Legendary_Jarvis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Legendary_Jarvis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D2FFBC1C3ECD66002DD3A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		56D2FFBE1C3ECD66002DD3A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -41,6 +95,129 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		563E917E1C43FF4600BD794F /* Data Storage */ = {
+			isa = PBXGroup;
+			children = (
+				563E917F1C43FF5800BD794F /* Entities */,
+				56D2FFC71C3ECD66002DD3A2 /* Legendary_Jarvis.xcdatamodeld */,
+				563E91831C4420A200BD794F /* DataManager.h */,
+				563E91841C4420A200BD794F /* DataManager.m */,
+				563E91861C44243F00BD794F /* DataBuilder.h */,
+				563E91871C44243F00BD794F /* DataBuilder.m */,
+			);
+			name = "Data Storage";
+			sourceTree = "<group>";
+		};
+		563E917F1C43FF5800BD794F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				563E91C01C44272F00BD794F /* Expansion */,
+				563E91BF1C44272600BD794F /* Scheme */,
+				563E91BE1C44271E00BD794F /* Mastermind */,
+				563E91BD1C44271400BD794F /* HenchmanGroup */,
+				563E91BC1C44270800BD794F /* VillainGroup */,
+				563E91BB1C4426F700BD794F /* DisplayableEntity */,
+				563E91BA1C4426E600BD794F /* Hero */,
+				563E91B91C4426D700BD794F /* EnemyGroup */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		563E91801C441F6500BD794F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		563E91B91C4426D700BD794F /* EnemyGroup */ = {
+			isa = PBXGroup;
+			children = (
+				563E91891C4426C000BD794F /* EnemyGroup+CoreDataProperties.h */,
+				563E918A1C4426C000BD794F /* EnemyGroup+CoreDataProperties.m */,
+				563E918B1C4426C000BD794F /* EnemyGroup.h */,
+				563E918C1C4426C000BD794F /* EnemyGroup.m */,
+			);
+			name = EnemyGroup;
+			sourceTree = "<group>";
+		};
+		563E91BA1C4426E600BD794F /* Hero */ = {
+			isa = PBXGroup;
+			children = (
+				563E918D1C4426C000BD794F /* Hero+CoreDataProperties.h */,
+				563E918E1C4426C000BD794F /* Hero+CoreDataProperties.m */,
+				563E918F1C4426C000BD794F /* Hero.h */,
+				563E91901C4426C000BD794F /* Hero.m */,
+			);
+			name = Hero;
+			sourceTree = "<group>";
+		};
+		563E91BB1C4426F700BD794F /* DisplayableEntity */ = {
+			isa = PBXGroup;
+			children = (
+				563E91911C4426C000BD794F /* DisplayableEntity+CoreDataProperties.h */,
+				563E91921C4426C000BD794F /* DisplayableEntity+CoreDataProperties.m */,
+				563E91931C4426C000BD794F /* DisplayableEntity.h */,
+				563E91941C4426C000BD794F /* DisplayableEntity.m */,
+			);
+			name = DisplayableEntity;
+			sourceTree = "<group>";
+		};
+		563E91BC1C44270800BD794F /* VillainGroup */ = {
+			isa = PBXGroup;
+			children = (
+				563E91951C4426C000BD794F /* VillainGroup+CoreDataProperties.h */,
+				563E91961C4426C000BD794F /* VillainGroup+CoreDataProperties.m */,
+				563E91971C4426C000BD794F /* VillainGroup.h */,
+				563E91981C4426C000BD794F /* VillainGroup.m */,
+			);
+			name = VillainGroup;
+			sourceTree = "<group>";
+		};
+		563E91BD1C44271400BD794F /* HenchmanGroup */ = {
+			isa = PBXGroup;
+			children = (
+				563E91991C4426C000BD794F /* HenchmanGroup+CoreDataProperties.h */,
+				563E919A1C4426C000BD794F /* HenchmanGroup+CoreDataProperties.m */,
+				563E919B1C4426C000BD794F /* HenchmanGroup.h */,
+				563E919C1C4426C000BD794F /* HenchmanGroup.m */,
+			);
+			name = HenchmanGroup;
+			sourceTree = "<group>";
+		};
+		563E91BE1C44271E00BD794F /* Mastermind */ = {
+			isa = PBXGroup;
+			children = (
+				563E919D1C4426C000BD794F /* Mastermind+CoreDataProperties.h */,
+				563E919E1C4426C000BD794F /* Mastermind+CoreDataProperties.m */,
+				563E919F1C4426C000BD794F /* Mastermind.h */,
+				563E91A01C4426C000BD794F /* Mastermind.m */,
+			);
+			name = Mastermind;
+			sourceTree = "<group>";
+		};
+		563E91BF1C44272600BD794F /* Scheme */ = {
+			isa = PBXGroup;
+			children = (
+				563E91A11C4426C000BD794F /* Scheme+CoreDataProperties.h */,
+				563E91A21C4426C000BD794F /* Scheme+CoreDataProperties.m */,
+				563E91A31C4426C000BD794F /* Scheme.h */,
+				563E91A41C4426C000BD794F /* Scheme.m */,
+			);
+			name = Scheme;
+			sourceTree = "<group>";
+		};
+		563E91C01C44272F00BD794F /* Expansion */ = {
+			isa = PBXGroup;
+			children = (
+				563E91A51C4426C000BD794F /* Expansion+CoreDataProperties.h */,
+				563E91A61C4426C000BD794F /* Expansion+CoreDataProperties.m */,
+				563E91A71C4426C000BD794F /* Expansion.h */,
+				563E91A81C4426C000BD794F /* Expansion.m */,
+			);
+			name = Expansion;
+			sourceTree = "<group>";
+		};
 		56D2FFAF1C3ECD66002DD3A2 = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +237,16 @@
 		56D2FFBA1C3ECD66002DD3A2 /* Legendary_Jarvis */ = {
 			isa = PBXGroup;
 			children = (
+				56D2FFC41C3ECD66002DD3A2 /* Main.storyboard */,
+				56D2FFCC1C3ECD66002DD3A2 /* LaunchScreen.storyboard */,
 				56D2FFBE1C3ECD66002DD3A2 /* AppDelegate.h */,
 				56D2FFBF1C3ECD66002DD3A2 /* AppDelegate.m */,
 				56D2FFC11C3ECD66002DD3A2 /* ViewController.h */,
 				56D2FFC21C3ECD66002DD3A2 /* ViewController.m */,
-				56D2FFC41C3ECD66002DD3A2 /* Main.storyboard */,
+				563E917E1C43FF4600BD794F /* Data Storage */,
+				563E91801C441F6500BD794F /* Resources */,
 				56D2FFCA1C3ECD66002DD3A2 /* Assets.xcassets */,
-				56D2FFCC1C3ECD66002DD3A2 /* LaunchScreen.storyboard */,
 				56D2FFCF1C3ECD66002DD3A2 /* Info.plist */,
-				56D2FFC71C3ECD66002DD3A2 /* Legendary_Jarvis.xcdatamodeld */,
 				56D2FFBB1C3ECD66002DD3A2 /* Supporting Files */,
 			);
 			path = Legendary_Jarvis;
@@ -152,10 +330,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				563E91B11C4426C000BD794F /* HenchmanGroup+CoreDataProperties.m in Sources */,
+				563E91B41C4426C000BD794F /* Mastermind.m in Sources */,
+				563E91AB1C4426C000BD794F /* Hero+CoreDataProperties.m in Sources */,
+				563E91AE1C4426C000BD794F /* DisplayableEntity.m in Sources */,
 				56D2FFC31C3ECD66002DD3A2 /* ViewController.m in Sources */,
+				563E91B01C4426C000BD794F /* VillainGroup.m in Sources */,
+				563E91B51C4426C000BD794F /* Scheme+CoreDataProperties.m in Sources */,
+				563E91B31C4426C000BD794F /* Mastermind+CoreDataProperties.m in Sources */,
+				563E91B61C4426C000BD794F /* Scheme.m in Sources */,
+				563E91A91C4426C000BD794F /* EnemyGroup+CoreDataProperties.m in Sources */,
+				563E91AA1C4426C000BD794F /* EnemyGroup.m in Sources */,
+				563E91AD1C4426C000BD794F /* DisplayableEntity+CoreDataProperties.m in Sources */,
+				563E91851C4420A200BD794F /* DataManager.m in Sources */,
+				563E91B81C4426C000BD794F /* Expansion.m in Sources */,
+				563E91B21C4426C000BD794F /* HenchmanGroup.m in Sources */,
+				563E91AC1C4426C000BD794F /* Hero.m in Sources */,
+				563E91AF1C4426C000BD794F /* VillainGroup+CoreDataProperties.m in Sources */,
 				56D2FFC01C3ECD66002DD3A2 /* AppDelegate.m in Sources */,
 				56D2FFC91C3ECD66002DD3A2 /* Legendary_Jarvis.xcdatamodeld in Sources */,
 				56D2FFBD1C3ECD66002DD3A2 /* main.m in Sources */,
+				563E91881C44243F00BD794F /* DataBuilder.m in Sources */,
+				563E91B71C4426C000BD794F /* Expansion+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +500,7 @@
 				56D2FFD41C3ECD66002DD3A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

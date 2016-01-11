@@ -1,4 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="14F27" minimumToolsVersion="Automatic">
+    <entity name="DisplayableEntity" representedClassName="DisplayableEntity" isAbstract="YES" syncable="YES">
+        <attribute name="displayName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="EnemyGroup" representedClassName="EnemyGroup" isAbstract="YES" parentEntity="DisplayableEntity" syncable="YES">
+        <relationship name="alwaysInSchemes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Scheme" inverseName="mandatoryEnemyGroups" inverseEntity="Scheme" syncable="YES"/>
+        <relationship name="alwaysLeadBy" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Mastermind" inverseName="alwaysLeads" inverseEntity="Mastermind" syncable="YES"/>
+    </entity>
+    <entity name="Expansion" representedClassName="Expansion" parentEntity="DisplayableEntity" syncable="YES">
+        <relationship name="henchmanGroups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="HenchmanGroup" inverseName="expansion" inverseEntity="HenchmanGroup" syncable="YES"/>
+        <relationship name="heroes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Hero" inverseName="expansion" inverseEntity="Hero" syncable="YES"/>
+        <relationship name="masterminds" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Mastermind" inverseName="expansion" inverseEntity="Mastermind" syncable="YES"/>
+        <relationship name="schemes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Scheme" inverseName="expansion" inverseEntity="Scheme" syncable="YES"/>
+        <relationship name="villainGroups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="VillainGroup" inverseName="expansion" inverseEntity="VillainGroup" syncable="YES"/>
+    </entity>
+    <entity name="HenchmanGroup" representedClassName="HenchmanGroup" parentEntity="EnemyGroup" syncable="YES">
+        <attribute name="displayName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="expansion" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Expansion" inverseName="henchmanGroups" inverseEntity="Expansion" syncable="YES"/>
+    </entity>
+    <entity name="Hero" representedClassName="Hero" parentEntity="DisplayableEntity" syncable="YES">
+        <relationship name="expansion" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Expansion" inverseName="heroes" inverseEntity="Expansion" syncable="YES"/>
+    </entity>
+    <entity name="Mastermind" representedClassName="Mastermind" parentEntity="DisplayableEntity" syncable="YES">
+        <relationship name="alwaysLeads" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EnemyGroup" inverseName="alwaysLeadBy" inverseEntity="EnemyGroup" syncable="YES"/>
+        <relationship name="expansion" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Expansion" inverseName="masterminds" inverseEntity="Expansion" syncable="YES"/>
+    </entity>
+    <entity name="Scheme" representedClassName="Scheme" parentEntity="DisplayableEntity" syncable="YES">
+        <attribute name="extraHenchmanGroups" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="extraVillainGroups" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="expansion" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Expansion" inverseName="schemes" inverseEntity="Expansion" syncable="YES"/>
+        <relationship name="mandatoryEnemyGroups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EnemyGroup" inverseName="alwaysInSchemes" inverseEntity="EnemyGroup" syncable="YES"/>
+    </entity>
+    <entity name="VillainGroup" representedClassName="VillainGroup" parentEntity="EnemyGroup" syncable="YES">
+        <attribute name="displayName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="expansion" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Expansion" inverseName="villainGroups" inverseEntity="Expansion" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Mastermind" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="VillainGroup" positionX="-54" positionY="-9" width="128" height="75"/>
+        <element name="HenchmanGroup" positionX="-36" positionY="9" width="128" height="75"/>
+        <element name="Hero" positionX="-18" positionY="27" width="128" height="60"/>
+        <element name="Scheme" positionX="0" positionY="45" width="128" height="105"/>
+        <element name="Expansion" positionX="18" positionY="63" width="128" height="120"/>
+        <element name="EnemyGroup" positionX="36" positionY="126" width="128" height="75"/>
+        <element name="DisplayableEntity" positionX="-9" positionY="72" width="128" height="60"/>
+    </elements>
 </model>
