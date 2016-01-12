@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20525EFE1C44F04800393028 /* GameSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20525EFD1C44F04800393028 /* GameSetupViewController.m */; };
+		20525F021C44F16F00393028 /* NumberOfPlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20525F011C44F16F00393028 /* NumberOfPlayersViewController.m */; };
+		20525F051C44F1A100393028 /* FilterCardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20525F041C44F1A100393028 /* FilterCardsViewController.m */; };
+		20525F081C44F26A00393028 /* CardTypeDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20525F071C44F26A00393028 /* CardTypeDisplayViewController.m */; };
 		20B7D63F1C4463680025BA20 /* SchemeRule+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B7D6181C4463680025BA20 /* SchemeRule+CoreDataProperties.m */; };
 		20B7D6401C4463680025BA20 /* SchemeRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B7D61A1C4463680025BA20 /* SchemeRule.m */; };
 		20B7D6411C4463680025BA20 /* EnemyGroup+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B7D61C1C4463680025BA20 /* EnemyGroup+CoreDataProperties.m */; };
@@ -31,7 +35,6 @@
 		563E91881C44243F00BD794F /* DataBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E91871C44243F00BD794F /* DataBuilder.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		56D2FFBD1C3ECD66002DD3A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D2FFBC1C3ECD66002DD3A2 /* main.m */; };
 		56D2FFC01C3ECD66002DD3A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D2FFBF1C3ECD66002DD3A2 /* AppDelegate.m */; };
-		56D2FFC31C3ECD66002DD3A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D2FFC21C3ECD66002DD3A2 /* ViewController.m */; };
 		56D2FFC61C3ECD66002DD3A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D2FFC41C3ECD66002DD3A2 /* Main.storyboard */; };
 		56D2FFC91C3ECD66002DD3A2 /* Legendary_Jarvis.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56D2FFC71C3ECD66002DD3A2 /* Legendary_Jarvis.xcdatamodeld */; };
 		56D2FFCB1C3ECD66002DD3A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D2FFCA1C3ECD66002DD3A2 /* Assets.xcassets */; };
@@ -39,6 +42,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20525EFC1C44F04800393028 /* GameSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSetupViewController.h; sourceTree = "<group>"; };
+		20525EFD1C44F04800393028 /* GameSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSetupViewController.m; sourceTree = "<group>"; };
+		20525F001C44F16F00393028 /* NumberOfPlayersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumberOfPlayersViewController.h; sourceTree = "<group>"; };
+		20525F011C44F16F00393028 /* NumberOfPlayersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NumberOfPlayersViewController.m; sourceTree = "<group>"; };
+		20525F031C44F1A100393028 /* FilterCardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterCardsViewController.h; sourceTree = "<group>"; };
+		20525F041C44F1A100393028 /* FilterCardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterCardsViewController.m; sourceTree = "<group>"; };
+		20525F061C44F26A00393028 /* CardTypeDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardTypeDisplayViewController.h; sourceTree = "<group>"; };
+		20525F071C44F26A00393028 /* CardTypeDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardTypeDisplayViewController.m; sourceTree = "<group>"; };
 		20B7D6171C4463680025BA20 /* SchemeRule+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SchemeRule+CoreDataProperties.h"; path = "../SchemeRule+CoreDataProperties.h"; sourceTree = "<group>"; };
 		20B7D6181C4463680025BA20 /* SchemeRule+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SchemeRule+CoreDataProperties.m"; path = "../SchemeRule+CoreDataProperties.m"; sourceTree = "<group>"; };
 		20B7D6191C4463680025BA20 /* SchemeRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SchemeRule.h; path = ../SchemeRule.h; sourceTree = "<group>"; };
@@ -87,8 +98,6 @@
 		56D2FFBC1C3ECD66002DD3A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		56D2FFBE1C3ECD66002DD3A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		56D2FFBF1C3ECD66002DD3A2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		56D2FFC11C3ECD66002DD3A2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		56D2FFC21C3ECD66002DD3A2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		56D2FFC51C3ECD66002DD3A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		56D2FFC81C3ECD66002DD3A2 /* Legendary_Jarvis.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Legendary_Jarvis.xcdatamodel; sourceTree = "<group>"; };
 		56D2FFCA1C3ECD66002DD3A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -107,6 +116,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20525EFF1C44F05000393028 /* View Controllers and Views */ = {
+			isa = PBXGroup;
+			children = (
+				20525EFC1C44F04800393028 /* GameSetupViewController.h */,
+				20525EFD1C44F04800393028 /* GameSetupViewController.m */,
+				20525F001C44F16F00393028 /* NumberOfPlayersViewController.h */,
+				20525F011C44F16F00393028 /* NumberOfPlayersViewController.m */,
+				20525F031C44F1A100393028 /* FilterCardsViewController.h */,
+				20525F041C44F1A100393028 /* FilterCardsViewController.m */,
+				20525F061C44F26A00393028 /* CardTypeDisplayViewController.h */,
+				20525F071C44F26A00393028 /* CardTypeDisplayViewController.m */,
+			);
+			name = "View Controllers and Views";
+			sourceTree = "<group>";
+		};
 		20B7D6531C4463820025BA20 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,12 +233,11 @@
 		56D2FFBA1C3ECD66002DD3A2 /* Legendary_Jarvis */ = {
 			isa = PBXGroup;
 			children = (
-				56D2FFC41C3ECD66002DD3A2 /* Main.storyboard */,
 				56D2FFCC1C3ECD66002DD3A2 /* LaunchScreen.storyboard */,
 				56D2FFBE1C3ECD66002DD3A2 /* AppDelegate.h */,
 				56D2FFBF1C3ECD66002DD3A2 /* AppDelegate.m */,
-				56D2FFC11C3ECD66002DD3A2 /* ViewController.h */,
-				56D2FFC21C3ECD66002DD3A2 /* ViewController.m */,
+				56D2FFC41C3ECD66002DD3A2 /* Main.storyboard */,
+				20525EFF1C44F05000393028 /* View Controllers and Views */,
 				563E917E1C43FF4600BD794F /* Data Storage */,
 				563E91801C441F6500BD794F /* Resources */,
 				56D2FFCA1C3ECD66002DD3A2 /* Assets.xcassets */,
@@ -304,13 +327,13 @@
 			files = (
 				20B7D6511C4463680025BA20 /* Mastermind+CoreDataProperties.m in Sources */,
 				20B7D6471C4463680025BA20 /* HenchmanGroup+CoreDataProperties.m in Sources */,
-				56D2FFC31C3ECD66002DD3A2 /* ViewController.m in Sources */,
 				563E91851C4420A200BD794F /* DataManager.m in Sources */,
 				20B7D64C1C4463680025BA20 /* Expansion.m in Sources */,
 				56D2FFC01C3ECD66002DD3A2 /* AppDelegate.m in Sources */,
 				56D2FFC91C3ECD66002DD3A2 /* Legendary_Jarvis.xcdatamodeld in Sources */,
 				20B7D6431C4463680025BA20 /* Hero+CoreDataProperties.m in Sources */,
 				20B7D6451C4463680025BA20 /* CardSet+CoreDataProperties.m in Sources */,
+				20525F081C44F26A00393028 /* CardTypeDisplayViewController.m in Sources */,
 				20B7D64E1C4463680025BA20 /* Scheme.m in Sources */,
 				20B7D64A1C4463680025BA20 /* DisplayableEntity.m in Sources */,
 				20B7D6491C4463680025BA20 /* DisplayableEntity+CoreDataProperties.m in Sources */,
@@ -319,6 +342,9 @@
 				20B7D6401C4463680025BA20 /* SchemeRule.m in Sources */,
 				20B7D6481C4463680025BA20 /* HenchmanGroup.m in Sources */,
 				56D2FFBD1C3ECD66002DD3A2 /* main.m in Sources */,
+				20525F051C44F1A100393028 /* FilterCardsViewController.m in Sources */,
+				20525F021C44F16F00393028 /* NumberOfPlayersViewController.m in Sources */,
+				20525EFE1C44F04800393028 /* GameSetupViewController.m in Sources */,
 				20B7D6441C4463680025BA20 /* Hero.m in Sources */,
 				20B7D64D1C4463680025BA20 /* Scheme+CoreDataProperties.m in Sources */,
 				20B7D63F1C4463680025BA20 /* SchemeRule+CoreDataProperties.m in Sources */,
@@ -443,6 +469,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mentormate.Legendary-Jarvis";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -454,6 +481,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mentormate.Legendary-Jarvis";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

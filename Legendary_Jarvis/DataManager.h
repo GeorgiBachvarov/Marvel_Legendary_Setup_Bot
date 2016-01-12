@@ -24,4 +24,10 @@
 
 @property (strong) NSManagedObjectContext *managedObjectContext;
 
+- (NSArray *) fetchAllSchemes;
+- (NSArray *) fetchAllMasterminds;
+- (NSArray *) fetchAllVillainGroups;
+- (NSArray *) fetchAllHenchmanGroups;
+- (NSArray *) fetchAllHeroes;
+
 @end

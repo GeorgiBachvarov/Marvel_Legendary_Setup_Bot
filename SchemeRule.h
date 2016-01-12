@@ -17,6 +17,7 @@ typedef NS_ENUM(NSInteger, SchemeRuleType) {
     SchemeRuleTypeAddExtraVillainGroupToVillainDeck,
     SchemeRuleTypeAddExtraHenchmanGroupToVillainDeck,
     SchemeRuleTypeAddExtraHeroToVillainDeck,
+    SchemeRuleTypeAddExtraMastermindToVillainDeck,
     
     SchemeRuleTypeSetNumberOfVillainGroups,
     SchemeRuleTypeSetNumberOfHenchmanGroups,

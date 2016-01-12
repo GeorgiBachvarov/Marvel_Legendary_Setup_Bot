@@ -4,7 +4,7 @@
 //
 //  Created by Georgi Bachvarov on 1/11/16.
 //  Copyright © 2016 Georgi Bachvarov. All rights reserved.
-//
+// https://boardgamegeek.com/thread/1200976/golden-solo-ruleset-variant-reviews-final-legendar
 
 #import "DataBuilder.h"
 #import "DataManager.h"
@@ -163,6 +163,77 @@
     
     
 #pragma mark Secret Wars Vol 1
+    
+    //init all data
+    Expansion *secretWarsVol1 = [[Expansion alloc] initWithDisplayName:@"Expansion"];
+    
+    Scheme *scheme3_1 = [[Scheme alloc] initWithDisplayName:@"Fragmented Realities" insertIntoExpansion:secretWarsVol1];
+    Scheme *scheme3_2 = [[Scheme alloc] initWithDisplayName:@"Crush Them With My Bare Hands" insertIntoExpansion:secretWarsVol1];
+    Scheme *scheme3_3 = [[Scheme alloc] initWithDisplayName:@"Corrupt the Next Generation of Heroes" insertIntoExpansion:secretWarsVol1];
+    Scheme *scheme3_4 = [[Scheme alloc] initWithDisplayName:@"Smash Two Dimensions Together" insertIntoExpansion:secretWarsVol1];
+    Scheme *scheme3_5 = [[Scheme alloc] initWithDisplayName:@"Build an Army of Annihilation" insertIntoExpansion:secretWarsVol1];
+    Scheme *scheme3_6 = [[Scheme alloc] initWithDisplayName:@"Master of Tyrants" insertIntoExpansion:secretWarsVol1];
+    Scheme *scheme3_7 = [[Scheme alloc] initWithDisplayName:@"Pan-Dimensional Plague" insertIntoExpansion:secretWarsVol1];
+    Scheme *scheme3_8 = [[Scheme alloc] initWithDisplayName:@"Dark Alliance" insertIntoExpansion:secretWarsVol1];
+    
+    Mastermind *mastermind3_1 = [[Mastermind alloc] initWithDisplayName:@"Zombie Green Goblin" insertIntoExpansion:secretWarsVol1];
+    Mastermind *mastermind3_2 = [[Mastermind alloc] initWithDisplayName:@"Wasteland Hulk" insertIntoExpansion:secretWarsVol1];
+    Mastermind *mastermind3_3 = [[Mastermind alloc] initWithDisplayName:@"Madelyne Pryor, Goblin Queen" insertIntoExpansion:secretWarsVol1];
+    Mastermind *mastermind3_4 = [[Mastermind alloc] initWithDisplayName:@"Nimrod, Super Sentinel" insertIntoExpansion:secretWarsVol1];
+    
+    VillainGroup *villainGroup3_1 = [[VillainGroup alloc] initWithDisplayName:@"Sentinel Territories" insertIntoExpansion:secretWarsVol1];
+    VillainGroup *villainGroup3_2 = [[VillainGroup alloc] initWithDisplayName:@"The Deadlands" insertIntoExpansion:secretWarsVol1];
+    VillainGroup *villainGroup3_3 = [[VillainGroup alloc] initWithDisplayName:@"Manhattan (Earth-1610)" insertIntoExpansion:secretWarsVol1];
+    VillainGroup *villainGroup3_4 = [[VillainGroup alloc] initWithDisplayName:@"Domain of Apocalypse" insertIntoExpansion:secretWarsVol1];
+    VillainGroup *villainGroup3_5 = [[VillainGroup alloc] initWithDisplayName:@"Limbo" insertIntoExpansion:secretWarsVol1];
+    VillainGroup *villainGroup3_6 = [[VillainGroup alloc] initWithDisplayName:@"Wasteland" insertIntoExpansion:secretWarsVol1];
+    
+    HenchmanGroup *henchmanGroup3_1 = [[HenchmanGroup alloc] initWithDisplayName:@"Ghost Racers" insertIntoExpansion:secretWarsVol1];
+    HenchmanGroup *henchmanGroup3_2 = [[HenchmanGroup alloc] initWithDisplayName:@"M.O.D.O.K.s" insertIntoExpansion:secretWarsVol1];
+    HenchmanGroup *henchmanGroup3_3 = [[HenchmanGroup alloc] initWithDisplayName:@"Thor Corps" insertIntoExpansion:secretWarsVol1];
+    
+    Hero *hero3_1 = [[Hero alloc] initWithDisplayName:@"Black Panther" insertIntoExpansion:secretWarsVol1];
+    Hero *hero3_2 = [[Hero alloc] initWithDisplayName:@"Black Bolt" insertIntoExpansion:secretWarsVol1];
+    Hero *hero3_3 = [[Hero alloc] initWithDisplayName:@"Dr. Strange" insertIntoExpansion:secretWarsVol1];
+    Hero *hero3_4 = [[Hero alloc] initWithDisplayName:@"Superior Iron Man" insertIntoExpansion:secretWarsVol1];
+    Hero *hero3_5 = [[Hero alloc] initWithDisplayName:@"Thanos" insertIntoExpansion:secretWarsVol1];
+    Hero *hero3_6 = [[Hero alloc] initWithDisplayName:@"Namor" insertIntoExpansion:secretWarsVol1];
+    Hero *hero3_7 = [[Hero alloc] initWithDisplayName:@"Maximus" insertIntoExpansion:secretWarsVol1];
+    Hero *hero3_8 = [[Hero alloc] initWithDisplayName:@"Proxima Midnight" insertIntoExpansion:secretWarsVol1];
+    Hero *hero3_9 = [[Hero alloc] initWithDisplayName:@"Magik" insertIntoExpansion:secretWarsVol1];
+    Hero *hero3_10 = [[Hero alloc] initWithDisplayName:@"Old Man Logan" insertIntoExpansion:secretWarsVol1];
+    Hero *hero3_11 = [[Hero alloc] initWithDisplayName:@"Apocalyptic Kitty Pryde" insertIntoExpansion:secretWarsVol1];
+    Hero *hero3_12 = [[Hero alloc] initWithDisplayName:@"Captain Marvel" insertIntoExpansion:secretWarsVol1];
+    Hero *hero3_13 = [[Hero alloc] initWithDisplayName:@"Lady Thor" insertIntoExpansion:secretWarsVol1];
+    Hero *hero3_14 = [[Hero alloc] initWithDisplayName:@"Ultimate Spider-Man" insertIntoExpansion:secretWarsVol1];
+    
+    //make necessary connections
+    [mastermind3_1 addAlwaysLeadsObject:villainGroup3_2];
+    [mastermind3_2 addAlwaysLeadsObject:villainGroup3_6];
+    [mastermind3_3 addAlwaysLeadsObject:villainGroup3_5];
+    [mastermind3_4 addAlwaysLeadsObject:villainGroup3_1];
+    
+    SchemeRule *rule3_1 = [[SchemeRule alloc] init];
+    rule3_1.ruleType = @(SchemeRuleTypeAddExtraVillainGroupToVillainDeck);
+    rule3_1.objectCount = @(1);
+    [scheme3_4 addRulesObject:rule3_1];
+    
+    SchemeRule *rule3_2 = [[SchemeRule alloc] init];
+    rule3_2.ruleType = @(SchemeRuleTypeAddExtraMastermindToVillainDeck);
+    rule3_2.objectCount = @(3);
+    [scheme3_6 addRulesObject:rule3_2];
+    
+    SchemeRule *rule3_3 = [[SchemeRule alloc] init];
+    rule3_3.ruleType = @(SchemeRuleTypeAddExtraMastermindToVillainDeck);
+    rule3_3.objectCount = @(1);
+    [scheme3_8 addRulesObject:rule3_2];
+    
+    SchemeRule *rule3_4 = [[SchemeRule alloc] init];
+    rule3_4.ruleType = @(SchemeRuleTypeAddExtraVillainGroupToVillainDeck);
+    rule3_4.objectCount = @(1);
+    [scheme3_1 addRulesObject:rule3_4];
+    
+    
     
 #pragma mark Secret Wars Vol 2
     

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="14F1509" minimumToolsVersion="Automatic">
     <entity name="CardSet" representedClassName="CardSet" isAbstract="YES" parentEntity="DisplayableEntity" syncable="YES">
+        <attribute name="isVetoed" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <relationship name="partOfSchemeRules" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SchemeRule" inverseName="objects" inverseEntity="SchemeRule" syncable="YES"/>
     </entity>
     <entity name="DisplayableEntity" representedClassName="DisplayableEntity" isAbstract="YES" syncable="YES">
@@ -40,6 +41,7 @@
         <relationship name="expansion" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Expansion" inverseName="villainGroups" inverseEntity="Expansion" syncable="YES"/>
     </entity>
     <elements>
+        <element name="CardSet" positionX="0" positionY="72" width="128" height="75"/>
         <element name="DisplayableEntity" positionX="-9" positionY="72" width="128" height="60"/>
         <element name="EnemyGroup" positionX="36" positionY="126" width="128" height="60"/>
         <element name="Expansion" positionX="18" positionY="63" width="128" height="120"/>
@@ -47,8 +49,7 @@
         <element name="Hero" positionX="-18" positionY="27" width="128" height="60"/>
         <element name="Mastermind" positionX="-63" positionY="-18" width="128" height="75"/>
         <element name="Scheme" positionX="0" positionY="45" width="128" height="75"/>
-        <element name="VillainGroup" positionX="-54" positionY="-9" width="128" height="60"/>
         <element name="SchemeRule" positionX="-9" positionY="72" width="128" height="105"/>
-        <element name="CardSet" positionX="0" positionY="72" width="128" height="60"/>
+        <element name="VillainGroup" positionX="-54" positionY="-9" width="128" height="60"/>
     </elements>
 </model>
