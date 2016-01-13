@@ -49,7 +49,7 @@
     
     HenchmanGroup *henchmanGroup1_1 = [[HenchmanGroup alloc] initWithDisplayName:@"Doombot Legion"];
     HenchmanGroup *henchmanGroup1_2 = [[HenchmanGroup alloc] initWithDisplayName:@"Hand Ninjas"];
-    HenchmanGroup *henchmanGroup1_3 = [[HenchmanGroup alloc] initWithDisplayName:@"Savage Land Mutates"];
+    HenchmanGroup *henchmanGroup1_3 = [[HenchmanGroup alloc] initWithDisplayName:@"Savage Land Mutants"];
     HenchmanGroup *henchmanGroup1_4 = [[HenchmanGroup alloc] initWithDisplayName:@"Sentinels"];
     
     Hero *hero1_1 = [[Hero alloc] initWithDisplayName:@"Black Widow"];
@@ -80,6 +80,7 @@
     [scheme1_3 addRulesObject:rule1_1];
 
     
+    return;
     
 #pragma mark Dark City
     

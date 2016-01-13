@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface CardSet (CoreDataProperties)
 
 @property (nullable, nonatomic, retain) NSSet<SchemeRule *> *partOfSchemeRules;
+@property (nullable, nonatomic, retain) NSNumber *isVetoed;
 
 @end
 

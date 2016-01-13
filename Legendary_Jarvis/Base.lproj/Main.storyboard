@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WL5-bt-swm">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Number Of Players View Controller-->
@@ -20,7 +22,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <segue destination="WL5-bt-swm" kind="show" id="4Sp-9C-FgY"/>
+                        <segue destination="WL5-bt-swm" kind="show" identifier="numberOfPlayersToGameSetupViewController" id="4Sp-9C-FgY"/>
                         <segue destination="AxV-y3-ZUZ" kind="presentation" id="ZZL-qV-wii"/>
                     </connections>
                 </viewController>
@@ -38,13 +40,73 @@
                     <view key="view" contentMode="scaleToFill" id="ZdY-8V-rRA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Ojy-2V-UOQ">
+                                <rect key="frame" x="-2" y="20" width="418" height="716"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mHW-az-HbH">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="157"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secret Invasion of The Skrull Shapeshifters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6i-gr-ehh">
+                                        <rect key="frame" x="43" y="5" width="328" height="79"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="b6i-gr-ehh" secondAttribute="trailing" constant="20" id="1Lk-dD-Ipl"/>
+                                    <constraint firstItem="b6i-gr-ehh" firstAttribute="centerX" secondItem="mHW-az-HbH" secondAttribute="centerX" id="MLG-ag-yIW"/>
+                                    <constraint firstItem="b6i-gr-ehh" firstAttribute="top" secondItem="mHW-az-HbH" secondAttribute="top" constant="5" id="Pgu-KL-YKl"/>
+                                    <constraint firstAttribute="height" constant="157" id="pYn-op-ZCX"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dr. Doom" translatesAutoresizingMaskIntoConstraints="NO" id="eLh-A8-0fK">
+                                <rect key="frame" x="142" y="89" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="3O4-6n-viQ"/>
+                                    <constraint firstAttribute="width" secondItem="eLh-A8-0fK" secondAttribute="height" id="U8w-B3-WGj"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1D9-LE-ai1">
+                                <rect key="frame" x="20" y="227" width="374" height="509"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="WL5-bt-swm" id="Hqh-zI-AWC"/>
+                                    <outlet property="delegate" destination="WL5-bt-swm" id="fAd-LD-Z4m"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eLh-A8-0fK" firstAttribute="top" secondItem="pAP-8L-ZyR" secondAttribute="bottom" constant="69" id="4YN-n5-fCo"/>
+                            <constraint firstItem="eLh-A8-0fK" firstAttribute="top" secondItem="b6i-gr-ehh" secondAttribute="bottom" constant="5" id="5A2-cQ-6ai"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ojy-2V-UOQ" secondAttribute="trailing" constant="-22" id="8AF-F8-I5w"/>
+                            <constraint firstItem="1D9-LE-ai1" firstAttribute="top" secondItem="eLh-A8-0fK" secondAttribute="bottom" constant="8" id="G71-WJ-xzw"/>
+                            <constraint firstItem="YbE-Qc-GBe" firstAttribute="top" secondItem="1D9-LE-ai1" secondAttribute="bottom" id="IvS-fG-dP7"/>
+                            <constraint firstItem="Ojy-2V-UOQ" firstAttribute="top" secondItem="pAP-8L-ZyR" secondAttribute="bottom" id="NKM-IA-1aF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mHW-az-HbH" secondAttribute="trailing" constant="-20" id="Rr8-Mc-m3K"/>
+                            <constraint firstItem="mHW-az-HbH" firstAttribute="leading" secondItem="ZdY-8V-rRA" secondAttribute="leadingMargin" constant="-20" id="T8U-Yf-0sR"/>
+                            <constraint firstItem="Ojy-2V-UOQ" firstAttribute="leading" secondItem="ZdY-8V-rRA" secondAttribute="leadingMargin" constant="-22" id="Uc1-Md-Bfb"/>
+                            <constraint firstItem="1D9-LE-ai1" firstAttribute="leading" secondItem="ZdY-8V-rRA" secondAttribute="leadingMargin" id="VI6-gc-6pp"/>
+                            <constraint firstItem="1D9-LE-ai1" firstAttribute="centerX" secondItem="ZdY-8V-rRA" secondAttribute="centerX" id="bEw-u9-j2a"/>
+                            <constraint firstItem="mHW-az-HbH" firstAttribute="top" secondItem="pAP-8L-ZyR" secondAttribute="bottom" constant="-20" id="cEw-xF-gGQ"/>
+                            <constraint firstItem="YbE-Qc-GBe" firstAttribute="top" secondItem="Ojy-2V-UOQ" secondAttribute="bottom" id="fip-vv-f8i"/>
+                            <constraint firstItem="eLh-A8-0fK" firstAttribute="centerX" secondItem="ZdY-8V-rRA" secondAttribute="centerX" id="i3n-kw-QAs"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="mastermindImageView" destination="eLh-A8-0fK" id="kIm-b7-BOt"/>
+                        <outlet property="schemeLabel" destination="b6i-gr-ehh" id="PEe-02-eK6"/>
+                        <outlet property="tableView" destination="1D9-LE-ai1" id="635-Zs-6Kc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ex7-gR-fef" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="845" y="357"/>
+            <point key="canvasLocation" x="1028" y="429"/>
         </scene>
         <!--Filter Cards View Controller-->
         <scene sceneID="ydY-de-I4Q">
@@ -88,4 +150,8 @@
             <point key="canvasLocation" x="845" y="1278"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Dr. Doom" width="128" height="128"/>
+        <image name="background" width="250" height="444"/>
+    </resources>
 </document>

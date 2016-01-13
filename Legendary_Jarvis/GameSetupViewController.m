@@ -7,31 +7,57 @@
 //
 
 #import "GameSetupViewController.h"
+#import "Mastermind.h"
+#import "VillainDeckSetTableViewCell.h"
 
-@interface GameSetupViewController ()
+@interface GameSetupViewController () <UITableViewDataSource, UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIImageView *mastermindImageView;
+@property (weak, nonatomic) IBOutlet UILabel *schemeLabel;
+
+
+
+@property (nonatomic) NSArray *mastermind;
+@property (nonatomic) NSArray *villainDeckSets;
+@property (nonatomic) NSArray *heroDeckSets;
 
 @end
 
 @implementation GameSetupViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self.tableView registerNib:[UINib nibWithNibName:@"VillainDeckSetTableViewCell" bundle:nil] forCellReuseIdentifier:@"VillainDeckSetTableViewCell"];
+    self.tableView.backgroundColor = [UIColor clearColor];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark UITableViewDataSource & UITableViewDelegate
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 5;
+//    return self.villainDeckSets.count;
 }
-*/
+
+- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 110;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    VillainDeckSetTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VillainDeckSetTableViewCell"];
+    
+    
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+    cell.contentView.backgroundColor = [UIColor clearColor];
+    cell.backgroundColor = [UIColor clearColor];
+    [cell invalidateIntrinsicContentSize];
+}
 
 @end

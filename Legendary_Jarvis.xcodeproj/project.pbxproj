@@ -31,8 +31,16 @@
 		20B7D6501C4463680025BA20 /* VillainGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B7D63A1C4463680025BA20 /* VillainGroup.m */; };
 		20B7D6511C4463680025BA20 /* Mastermind+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B7D63C1C4463680025BA20 /* Mastermind+CoreDataProperties.m */; };
 		20B7D6521C4463680025BA20 /* Mastermind.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B7D63E1C4463680025BA20 /* Mastermind.m */; };
+		561F50201C46B4BC00BD5AD2 /* Comic Book Bold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 561F501B1C46B4BC00BD5AD2 /* Comic Book Bold Italic.otf */; };
+		561F50211C46B4BC00BD5AD2 /* Comic Book Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 561F501C1C46B4BC00BD5AD2 /* Comic Book Bold.otf */; };
+		561F50221C46B4BC00BD5AD2 /* Comic Book Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 561F501D1C46B4BC00BD5AD2 /* Comic Book Italic.otf */; };
+		561F50231C46B4BC00BD5AD2 /* Comic Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 561F501E1C46B4BC00BD5AD2 /* Comic Book.otf */; };
+		561F50241C46B4BC00BD5AD2 /* Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 561F501F1C46B4BC00BD5AD2 /* Font License.txt */; };
 		563E91851C4420A200BD794F /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E91841C4420A200BD794F /* DataManager.m */; };
 		563E91881C44243F00BD794F /* DataBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E91871C44243F00BD794F /* DataBuilder.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		56984CED1C46AEA100D7255E /* VillainDeckSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 56984CEC1C46AEA100D7255E /* VillainDeckSetTableViewCell.m */; };
+		56984CF11C46AEC800D7255E /* VillainDeckSetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56984CF01C46AEC800D7255E /* VillainDeckSetTableViewCell.xib */; };
+		56984CF41C46B08000D7255E /* BorderedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56984CF31C46B08000D7255E /* BorderedLabel.m */; };
 		56D2FFBD1C3ECD66002DD3A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D2FFBC1C3ECD66002DD3A2 /* main.m */; };
 		56D2FFC01C3ECD66002DD3A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D2FFBF1C3ECD66002DD3A2 /* AppDelegate.m */; };
 		56D2FFC61C3ECD66002DD3A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D2FFC41C3ECD66002DD3A2 /* Main.storyboard */; };
@@ -90,10 +98,20 @@
 		20B7D63C1C4463680025BA20 /* Mastermind+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Mastermind+CoreDataProperties.m"; path = "../Mastermind+CoreDataProperties.m"; sourceTree = "<group>"; };
 		20B7D63D1C4463680025BA20 /* Mastermind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mastermind.h; path = ../Mastermind.h; sourceTree = "<group>"; };
 		20B7D63E1C4463680025BA20 /* Mastermind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mastermind.m; path = ../Mastermind.m; sourceTree = "<group>"; };
+		561F501B1C46B4BC00BD5AD2 /* Comic Book Bold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comic Book Bold Italic.otf"; sourceTree = "<group>"; };
+		561F501C1C46B4BC00BD5AD2 /* Comic Book Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comic Book Bold.otf"; sourceTree = "<group>"; };
+		561F501D1C46B4BC00BD5AD2 /* Comic Book Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comic Book Italic.otf"; sourceTree = "<group>"; };
+		561F501E1C46B4BC00BD5AD2 /* Comic Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comic Book.otf"; sourceTree = "<group>"; };
+		561F501F1C46B4BC00BD5AD2 /* Font License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Font License.txt"; sourceTree = "<group>"; };
 		563E91831C4420A200BD794F /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
 		563E91841C4420A200BD794F /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		563E91861C44243F00BD794F /* DataBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBuilder.h; sourceTree = "<group>"; };
 		563E91871C44243F00BD794F /* DataBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBuilder.m; sourceTree = "<group>"; };
+		56984CEB1C46AEA100D7255E /* VillainDeckSetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VillainDeckSetTableViewCell.h; sourceTree = "<group>"; };
+		56984CEC1C46AEA100D7255E /* VillainDeckSetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VillainDeckSetTableViewCell.m; sourceTree = "<group>"; };
+		56984CF01C46AEC800D7255E /* VillainDeckSetTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VillainDeckSetTableViewCell.xib; sourceTree = "<group>"; };
+		56984CF21C46B08000D7255E /* BorderedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorderedLabel.h; sourceTree = "<group>"; };
+		56984CF31C46B08000D7255E /* BorderedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorderedLabel.m; sourceTree = "<group>"; };
 		56D2FFB81C3ECD66002DD3A2 /* Legendary_Jarvis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Legendary_Jarvis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56D2FFBC1C3ECD66002DD3A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		56D2FFBE1C3ECD66002DD3A2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -119,8 +137,7 @@
 		20525EFF1C44F05000393028 /* View Controllers and Views */ = {
 			isa = PBXGroup;
 			children = (
-				20525EFC1C44F04800393028 /* GameSetupViewController.h */,
-				20525EFD1C44F04800393028 /* GameSetupViewController.m */,
+				56984CEA1C46AE6600D7255E /* Game Setup */,
 				20525F001C44F16F00393028 /* NumberOfPlayersViewController.h */,
 				20525F011C44F16F00393028 /* NumberOfPlayersViewController.m */,
 				20525F031C44F1A100393028 /* FilterCardsViewController.h */,
@@ -185,6 +202,18 @@
 			name = "Auto-Generated";
 			sourceTree = "<group>";
 		};
+		561F501A1C46B4BC00BD5AD2 /* comic_book */ = {
+			isa = PBXGroup;
+			children = (
+				561F501B1C46B4BC00BD5AD2 /* Comic Book Bold Italic.otf */,
+				561F501C1C46B4BC00BD5AD2 /* Comic Book Bold.otf */,
+				561F501D1C46B4BC00BD5AD2 /* Comic Book Italic.otf */,
+				561F501E1C46B4BC00BD5AD2 /* Comic Book.otf */,
+				561F501F1C46B4BC00BD5AD2 /* Font License.txt */,
+			);
+			path = comic_book;
+			sourceTree = "<group>";
+		};
 		563E917E1C43FF4600BD794F /* Data Storage */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,8 +239,23 @@
 		563E91801C441F6500BD794F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				561F501A1C46B4BC00BD5AD2 /* comic_book */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		56984CEA1C46AE6600D7255E /* Game Setup */ = {
+			isa = PBXGroup;
+			children = (
+				20525EFC1C44F04800393028 /* GameSetupViewController.h */,
+				20525EFD1C44F04800393028 /* GameSetupViewController.m */,
+				56984CEB1C46AEA100D7255E /* VillainDeckSetTableViewCell.h */,
+				56984CEC1C46AEA100D7255E /* VillainDeckSetTableViewCell.m */,
+				56984CF01C46AEC800D7255E /* VillainDeckSetTableViewCell.xib */,
+				56984CF21C46B08000D7255E /* BorderedLabel.h */,
+				56984CF31C46B08000D7255E /* BorderedLabel.m */,
+			);
+			name = "Game Setup";
 			sourceTree = "<group>";
 		};
 		56D2FFAF1C3ECD66002DD3A2 = {
@@ -312,9 +356,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				561F50241C46B4BC00BD5AD2 /* Font License.txt in Resources */,
 				56D2FFCE1C3ECD66002DD3A2 /* LaunchScreen.storyboard in Resources */,
+				56984CF11C46AEC800D7255E /* VillainDeckSetTableViewCell.xib in Resources */,
 				56D2FFCB1C3ECD66002DD3A2 /* Assets.xcassets in Resources */,
+				561F50231C46B4BC00BD5AD2 /* Comic Book.otf in Resources */,
 				56D2FFC61C3ECD66002DD3A2 /* Main.storyboard in Resources */,
+				561F50221C46B4BC00BD5AD2 /* Comic Book Italic.otf in Resources */,
+				561F50201C46B4BC00BD5AD2 /* Comic Book Bold Italic.otf in Resources */,
+				561F50211C46B4BC00BD5AD2 /* Comic Book Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +390,7 @@
 				20B7D64B1C4463680025BA20 /* Expansion+CoreDataProperties.m in Sources */,
 				20B7D6461C4463680025BA20 /* CardSet.m in Sources */,
 				20B7D6401C4463680025BA20 /* SchemeRule.m in Sources */,
+				56984CED1C46AEA100D7255E /* VillainDeckSetTableViewCell.m in Sources */,
 				20B7D6481C4463680025BA20 /* HenchmanGroup.m in Sources */,
 				56D2FFBD1C3ECD66002DD3A2 /* main.m in Sources */,
 				20525F051C44F1A100393028 /* FilterCardsViewController.m in Sources */,
@@ -353,6 +404,7 @@
 				20B7D6501C4463680025BA20 /* VillainGroup.m in Sources */,
 				20B7D6521C4463680025BA20 /* Mastermind.m in Sources */,
 				20B7D6411C4463680025BA20 /* EnemyGroup+CoreDataProperties.m in Sources */,
+				56984CF41C46B08000D7255E /* BorderedLabel.m in Sources */,
 				20B7D64F1C4463680025BA20 /* VillainGroup+CoreDataProperties.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
