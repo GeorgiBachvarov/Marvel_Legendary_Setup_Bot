@@ -67,5 +67,45 @@
     });
 }
 
+- (NSArray *) fetchAllSchemes{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Scheme"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isVetoed == NO"];
+    [fetchRequest setPredicate:predicate];
+    NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
+    return result;
+}
+
+- (NSArray *) fetchAllMasterminds{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Mastermind"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isVetoed == NO"];
+    [fetchRequest setPredicate:predicate];
+    NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
+    return result;
+}
+
+- (NSArray *) fetchAllVillainGroups{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"VillainGroup"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isVetoed == NO"];
+    [fetchRequest setPredicate:predicate];
+    NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
+    return result;
+}
+
+- (NSArray *) fetchAllHenchmanGroups{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"HenchmanGroup"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isVetoed == NO"];
+    [fetchRequest setPredicate:predicate];
+    NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
+    return result;
+}
+
+- (NSArray *) fetchAllHeroes{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Hero"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isVetoed == NO"];
+    [fetchRequest setPredicate:predicate];
+    NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
+    return result;
+}
+
 
 @end

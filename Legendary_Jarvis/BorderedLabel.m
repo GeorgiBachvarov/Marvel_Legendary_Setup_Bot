@@ -13,17 +13,12 @@
 - (void)awakeFromNib{
     self.layer.borderColor = [UIColor blackColor].CGColor;
     self.layer.borderWidth = 3.f;
-    self.font = [UIFont fontWithName:@"Comic Book" size:20];
+    self.font = [UIFont fontWithName:@"ComicBook" size:15];
 }
 
 - (CGSize)intrinsicContentSize{
     CGSize superSize = [super intrinsicContentSize];
-    return CGSizeMake(superSize.width+50, superSize.height+15);
-}
-
-
-- (CGRect)textRectForBounds:(CGRect)bounds limitedToNumberOfLines:(NSInteger)numberOfLines{
-    return CGRectInset(self.bounds , 10 , 0 );
+    return CGSizeMake(superSize.width+20, superSize.height+15);
 }
 
 - (void)drawTextInRect:(CGRect)rect{

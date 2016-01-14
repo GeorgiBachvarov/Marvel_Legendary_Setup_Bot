@@ -47,6 +47,7 @@
 		56D2FFC91C3ECD66002DD3A2 /* Legendary_Jarvis.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56D2FFC71C3ECD66002DD3A2 /* Legendary_Jarvis.xcdatamodeld */; };
 		56D2FFCB1C3ECD66002DD3A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D2FFCA1C3ECD66002DD3A2 /* Assets.xcassets */; };
 		56D2FFCE1C3ECD66002DD3A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D2FFCC1C3ECD66002DD3A2 /* LaunchScreen.storyboard */; };
+		56F6835C1C47E37000C0690D /* GradientTopBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F6835B1C47E37000C0690D /* GradientTopBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,6 +122,8 @@
 		56D2FFCA1C3ECD66002DD3A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56D2FFCD1C3ECD66002DD3A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56D2FFCF1C3ECD66002DD3A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56F6835A1C47E37000C0690D /* GradientTopBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientTopBar.h; sourceTree = "<group>"; };
+		56F6835B1C47E37000C0690D /* GradientTopBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientTopBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +257,8 @@
 				56984CF01C46AEC800D7255E /* VillainDeckSetTableViewCell.xib */,
 				56984CF21C46B08000D7255E /* BorderedLabel.h */,
 				56984CF31C46B08000D7255E /* BorderedLabel.m */,
+				56F6835A1C47E37000C0690D /* GradientTopBar.h */,
+				56F6835B1C47E37000C0690D /* GradientTopBar.m */,
 			);
 			name = "Game Setup";
 			sourceTree = "<group>";
@@ -376,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20B7D6511C4463680025BA20 /* Mastermind+CoreDataProperties.m in Sources */,
+				56F6835C1C47E37000C0690D /* GradientTopBar.m in Sources */,
 				20B7D6471C4463680025BA20 /* HenchmanGroup+CoreDataProperties.m in Sources */,
 				563E91851C4420A200BD794F /* DataManager.m in Sources */,
 				20B7D64C1C4463680025BA20 /* Expansion.m in Sources */,

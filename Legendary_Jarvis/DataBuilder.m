@@ -29,44 +29,44 @@
     Scheme *scheme1_2 = [[Scheme alloc] initWithDisplayName:@"Midtown Bank Robbery" insertIntoExpansion:basicSet];
     Scheme *scheme1_3 = [[Scheme alloc] initWithDisplayName:@"Negative Zone Prizon Breakout" insertIntoExpansion:basicSet];
     Scheme *scheme1_4 = [[Scheme alloc] initWithDisplayName:@"Portals to the Dark Dimension" insertIntoExpansion:basicSet];
-    Scheme *scheme1_5 = [[Scheme alloc] initWithDisplayName:@"Replace Earth's Leaders with Killbots"];
-    Scheme *scheme1_6 = [[Scheme alloc] initWithDisplayName:@"Secret Invasion of the Skrull Shapeshifters"];
-    Scheme *scheme1_7 = [[Scheme alloc] initWithDisplayName:@"Super Hero Civil War"];
-    Scheme *scheme1_8 = [[Scheme alloc] initWithDisplayName:@"Unleash the Power of the Cosmic Cube"];
+    Scheme *scheme1_5 = [[Scheme alloc] initWithDisplayName:@"Replace Earth's Leaders with Killbots" insertIntoExpansion:basicSet];
+    Scheme *scheme1_6 = [[Scheme alloc] initWithDisplayName:@"Secret Invasion of the Skrull Shapeshifters" insertIntoExpansion:basicSet];
+    Scheme *scheme1_7 = [[Scheme alloc] initWithDisplayName:@"Super Hero Civil War" insertIntoExpansion:basicSet];
+    Scheme *scheme1_8 = [[Scheme alloc] initWithDisplayName:@"Unleash the Power of the Cosmic Cube" insertIntoExpansion:basicSet];
     
-    Mastermind *mastermind1_1 = [[Mastermind alloc] initWithDisplayName:@"Red Skull"];
-    Mastermind *mastermind1_2 = [[Mastermind alloc] initWithDisplayName:@"Magneto"];
-    Mastermind *mastermind1_3 = [[Mastermind alloc] initWithDisplayName:@"Dr. Doom"];
-    Mastermind *mastermind1_4 = [[Mastermind alloc] initWithDisplayName:@"Loki"];
+    Mastermind *mastermind1_1 = [[Mastermind alloc] initWithDisplayName:@"Red Skull" insertIntoExpansion:basicSet];
+    Mastermind *mastermind1_2 = [[Mastermind alloc] initWithDisplayName:@"Magneto" insertIntoExpansion:basicSet];
+    Mastermind *mastermind1_3 = [[Mastermind alloc] initWithDisplayName:@"Dr. Doom" insertIntoExpansion:basicSet];
+    Mastermind *mastermind1_4 = [[Mastermind alloc] initWithDisplayName:@"Loki" insertIntoExpansion:basicSet];
     
-    VillainGroup *villainGroup1_1 = [[VillainGroup alloc] initWithDisplayName:@"Brotherhood"];
-    VillainGroup *villainGroup1_2 = [[VillainGroup alloc] initWithDisplayName:@"Enemies of Asgard"];
-    VillainGroup *villainGroup1_3 = [[VillainGroup alloc] initWithDisplayName:@"HYDRA"];
-    VillainGroup *villainGroup1_4 = [[VillainGroup alloc] initWithDisplayName:@"Masters of Evil"];
-    VillainGroup *villainGroup1_5 = [[VillainGroup alloc] initWithDisplayName:@"Radiation"];
-    VillainGroup *villainGroup1_6 = [[VillainGroup alloc] initWithDisplayName:@"Skrulls"];
-    VillainGroup *villainGroup1_7 = [[VillainGroup alloc] initWithDisplayName:@"Spider Foes"];
+    VillainGroup *villainGroup1_1 = [[VillainGroup alloc] initWithDisplayName:@"Brotherhood" insertIntoExpansion:basicSet];
+    VillainGroup *villainGroup1_2 = [[VillainGroup alloc] initWithDisplayName:@"Enemies of Asgard" insertIntoExpansion:basicSet];
+    VillainGroup *villainGroup1_3 = [[VillainGroup alloc] initWithDisplayName:@"HYDRA" insertIntoExpansion:basicSet];
+    VillainGroup *villainGroup1_4 = [[VillainGroup alloc] initWithDisplayName:@"Masters of Evil" insertIntoExpansion:basicSet];
+    VillainGroup *villainGroup1_5 = [[VillainGroup alloc] initWithDisplayName:@"Radiation" insertIntoExpansion:basicSet];
+    VillainGroup *villainGroup1_6 = [[VillainGroup alloc] initWithDisplayName:@"Skrulls" insertIntoExpansion:basicSet];
+    VillainGroup *villainGroup1_7 = [[VillainGroup alloc] initWithDisplayName:@"Spider Foes" insertIntoExpansion:basicSet];
     
-    HenchmanGroup *henchmanGroup1_1 = [[HenchmanGroup alloc] initWithDisplayName:@"Doombot Legion"];
-    HenchmanGroup *henchmanGroup1_2 = [[HenchmanGroup alloc] initWithDisplayName:@"Hand Ninjas"];
-    HenchmanGroup *henchmanGroup1_3 = [[HenchmanGroup alloc] initWithDisplayName:@"Savage Land Mutants"];
-    HenchmanGroup *henchmanGroup1_4 = [[HenchmanGroup alloc] initWithDisplayName:@"Sentinels"];
+    HenchmanGroup *henchmanGroup1_1 = [[HenchmanGroup alloc] initWithDisplayName:@"Doombot Legion" insertIntoExpansion:basicSet];
+    HenchmanGroup *henchmanGroup1_2 = [[HenchmanGroup alloc] initWithDisplayName:@"Hand Ninjas" insertIntoExpansion:basicSet];
+    HenchmanGroup *henchmanGroup1_3 = [[HenchmanGroup alloc] initWithDisplayName:@"Savage Land Mutants" insertIntoExpansion:basicSet];
+    HenchmanGroup *henchmanGroup1_4 = [[HenchmanGroup alloc] initWithDisplayName:@"Sentinels" insertIntoExpansion:basicSet];
     
-    Hero *hero1_1 = [[Hero alloc] initWithDisplayName:@"Black Widow"];
-    Hero *hero1_2 = [[Hero alloc] initWithDisplayName:@"Captain America"];
-    Hero *hero1_3 = [[Hero alloc] initWithDisplayName:@"Cyclops"];
-    Hero *hero1_4 = [[Hero alloc] initWithDisplayName:@"Deadpool"];
-    Hero *hero1_5 = [[Hero alloc] initWithDisplayName:@"Emma Frost"];
-    Hero *hero1_6 = [[Hero alloc] initWithDisplayName:@"Gambit"];
-    Hero *hero1_7 = [[Hero alloc] initWithDisplayName:@"Hawkeye"];
-    Hero *hero1_8 = [[Hero alloc] initWithDisplayName:@"Hulk"];
-    Hero *hero1_9 = [[Hero alloc] initWithDisplayName:@"Iron Man"];
-    Hero *hero1_10 = [[Hero alloc] initWithDisplayName:@"Nick Fury"];
-    Hero *hero1_11 = [[Hero alloc] initWithDisplayName:@"Rogue"];
-    Hero *hero1_12 = [[Hero alloc] initWithDisplayName:@"Spider-Man"];
-    Hero *hero1_13 = [[Hero alloc] initWithDisplayName:@"Storm"];
-    Hero *hero1_14 = [[Hero alloc] initWithDisplayName:@"Thor"];
-    Hero *hero1_15 = [[Hero alloc] initWithDisplayName:@"Wolverine"];
+    Hero *hero1_1 = [[Hero alloc] initWithDisplayName:@"Black Widow" insertIntoExpansion:basicSet];
+    Hero *hero1_2 = [[Hero alloc] initWithDisplayName:@"Captain America" insertIntoExpansion:basicSet];
+    Hero *hero1_3 = [[Hero alloc] initWithDisplayName:@"Cyclops" insertIntoExpansion:basicSet];
+    Hero *hero1_4 = [[Hero alloc] initWithDisplayName:@"Deadpool" insertIntoExpansion:basicSet];
+    Hero *hero1_5 = [[Hero alloc] initWithDisplayName:@"Emma Frost" insertIntoExpansion:basicSet];
+    Hero *hero1_6 = [[Hero alloc] initWithDisplayName:@"Gambit" insertIntoExpansion:basicSet];
+    Hero *hero1_7 = [[Hero alloc] initWithDisplayName:@"Hawkeye" insertIntoExpansion:basicSet];
+    Hero *hero1_8 = [[Hero alloc] initWithDisplayName:@"Hulk" insertIntoExpansion:basicSet];
+    Hero *hero1_9 = [[Hero alloc] initWithDisplayName:@"Iron Man" insertIntoExpansion:basicSet];
+    Hero *hero1_10 = [[Hero alloc] initWithDisplayName:@"Nick Fury" insertIntoExpansion:basicSet];
+    Hero *hero1_11 = [[Hero alloc] initWithDisplayName:@"Rogue" insertIntoExpansion:basicSet];
+    Hero *hero1_12 = [[Hero alloc] initWithDisplayName:@"Spider-Man" insertIntoExpansion:basicSet];
+    Hero *hero1_13 = [[Hero alloc] initWithDisplayName:@"Storm" insertIntoExpansion:basicSet];
+    Hero *hero1_14 = [[Hero alloc] initWithDisplayName:@"Thor" insertIntoExpansion:basicSet];
+    Hero *hero1_15 = [[Hero alloc] initWithDisplayName:@"Wolverine" insertIntoExpansion:basicSet];
     
     //make necessary connections
     [mastermind1_1 addAlwaysLeadsObject:villainGroup1_3];

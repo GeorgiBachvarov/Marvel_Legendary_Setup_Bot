@@ -12,44 +12,38 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diagLine" translatesAutoresizingMaskIntoConstraints="NO" id="Sv2-Yy-gnG">
-                    <rect key="frame" x="48" y="48" width="30" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="Sv2-Yy-gnG" secondAttribute="height" multiplier="1:1" id="COK-u2-tMu"/>
-                        <constraint firstAttribute="width" constant="30" id="puM-pP-GuZ"/>
-                    </constraints>
-                </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Doombot Legion" translatesAutoresizingMaskIntoConstraints="NO" id="nKB-li-cUa">
-                    <rect key="frame" x="0.0" y="0.0" width="59" height="59"/>
+                    <rect key="frame" x="110" y="5" width="100" height="100"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="nKB-li-cUa" secondAttribute="height" id="3x7-cq-28c"/>
-                        <constraint firstAttribute="width" constant="59" id="XhT-UD-PIJ"/>
+                        <constraint firstAttribute="width" constant="100" id="XhT-UD-PIJ"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doombot Legion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdL-dr-DaL" customClass="BorderedLabel">
-                    <rect key="frame" x="78" y="75" width="128" height="27"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Savage Land Mutants asdf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdL-dr-DaL" customClass="BorderedLabel">
+                    <rect key="frame" x="59" y="73" width="203" height="27"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
-            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="nKB-li-cUa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HiH-Yv-ISY"/>
-                <constraint firstItem="Sv2-Yy-gnG" firstAttribute="top" secondItem="nKB-li-cUa" secondAttribute="bottom" constant="-11" id="TV1-4a-au7"/>
-                <constraint firstItem="TdL-dr-DaL" firstAttribute="leading" secondItem="nKB-li-cUa" secondAttribute="trailing" constant="19" id="frC-lX-DbF"/>
-                <constraint firstItem="nKB-li-cUa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jtn-xb-RtO"/>
-                <constraint firstItem="Sv2-Yy-gnG" firstAttribute="leading" secondItem="nKB-li-cUa" secondAttribute="trailing" constant="-11" id="sep-ha-DXR"/>
-                <constraint firstItem="TdL-dr-DaL" firstAttribute="top" secondItem="nKB-li-cUa" secondAttribute="bottom" constant="16" id="vKc-Bf-Kwt"/>
+                <constraint firstAttribute="bottom" secondItem="TdL-dr-DaL" secondAttribute="bottom" constant="10" id="EnS-Us-EjY"/>
+                <constraint firstItem="TdL-dr-DaL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="FpT-P2-w8W"/>
+                <constraint firstItem="nKB-li-cUa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PnL-JG-dfS"/>
+                <constraint firstItem="nKB-li-cUa" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TOb-gX-qPh"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="villainDeckDisplayNameLabel" destination="TdL-dr-DaL" id="iXM-y3-jui"/>
+                <outlet property="villainDeckImage" destination="nKB-li-cUa" id="6TL-KU-yIs"/>
+            </connections>
             <point key="canvasLocation" x="240" y="227"/>
         </view>
     </objects>
     <resources>
         <image name="Doombot Legion" width="142" height="142"/>
-        <image name="diagLine" width="73" height="72"/>
     </resources>
 </document>

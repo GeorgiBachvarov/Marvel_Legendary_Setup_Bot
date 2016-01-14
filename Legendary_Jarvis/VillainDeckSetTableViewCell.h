@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BorderedLabel.h"
 
 @interface VillainDeckSetTableViewCell : UITableViewCell
+
+@property (weak, nonatomic) IBOutlet UIImageView *villainDeckImage;
+@property (weak, nonatomic) IBOutlet BorderedLabel *villainDeckDisplayNameLabel;
 
 @end

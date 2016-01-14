@@ -15,7 +15,7 @@
     NSEntityDescription *entityDescription = [NSEntityDescription entityForName:NSStringFromClass(self.class) inManagedObjectContext:[[DataManager sharedInstance] managedObjectContext]];
     
     self = [self initWithEntity:entityDescription insertIntoManagedObjectContext:[[DataManager sharedInstance] managedObjectContext]];
-    
+    [self setDisplayName:displayName];
     return self;
 }
 

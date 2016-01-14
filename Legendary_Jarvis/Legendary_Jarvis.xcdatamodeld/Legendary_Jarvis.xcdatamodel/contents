@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="14F1509" minimumToolsVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="14F1509" minimumToolsVersion="Automatic">
     <entity name="CardSet" representedClassName="CardSet" isAbstract="YES" parentEntity="DisplayableEntity" syncable="YES">
         <attribute name="isVetoed" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <relationship name="partOfSchemeRules" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SchemeRule" inverseName="objects" inverseEntity="SchemeRule" syncable="YES"/>

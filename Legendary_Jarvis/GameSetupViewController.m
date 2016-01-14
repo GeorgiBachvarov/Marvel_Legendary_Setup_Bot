@@ -9,12 +9,17 @@
 #import "GameSetupViewController.h"
 #import "Mastermind.h"
 #import "VillainDeckSetTableViewCell.h"
+#import "DataManager.h"
 
 @interface GameSetupViewController () <UITableViewDataSource, UITableViewDelegate>
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
+@property (weak, nonatomic) IBOutlet UITableView *villainDeckTableView;
+@property (weak, nonatomic) IBOutlet UITableView *heroDeckTableView;
 @property (weak, nonatomic) IBOutlet UIImageView *mastermindImageView;
 @property (weak, nonatomic) IBOutlet UILabel *schemeLabel;
 
+@property (weak, nonatomic) IBOutlet UIScrollView *backgroundScrollView;
+@property (weak, nonatomic) IBOutlet UIScrollView *mainScrollView;
 
 
 @property (nonatomic) NSArray *mastermind;
@@ -27,8 +32,20 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    [self.tableView registerNib:[UINib nibWithNibName:@"VillainDeckSetTableViewCell" bundle:nil] forCellReuseIdentifier:@"VillainDeckSetTableViewCell"];
-    self.tableView.backgroundColor = [UIColor clearColor];
+    [self.villainDeckTableView registerNib:[UINib nibWithNibName:@"VillainDeckSetTableViewCell" bundle:nil] forCellReuseIdentifier:@"VillainDeckSetTableViewCell"];
+    self.villainDeckTableView.backgroundColor = [UIColor clearColor];
+    
+    [self.heroDeckTableView registerNib:[UINib nibWithNibName:@"VillainDeckSetTableViewCell" bundle:nil] forCellReuseIdentifier:@"VillainDeckSetTableViewCell"];
+    self.heroDeckTableView.backgroundColor = [UIColor clearColor];
+    
+    self.mastermindImageView.layer.borderColor = [UIColor blackColor].CGColor;
+    self.mastermindImageView.layer.borderWidth = 3.f;
+    
+    self.schemeLabel.font = [UIFont fontWithName:@"ComicBook" size:18];
+    self.mainScrollView.delegate = self;
+    
+    self.villainDeckSets = [[DataManager sharedInstance] fetchAllVillainGroups];
+    self.heroDeckSets = [[DataManager sharedInstance] fetchAllHeroes];
 }
 
 #pragma mark UITableViewDataSource & UITableViewDelegate
@@ -38,26 +55,41 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
-//    return self.villainDeckSets.count;
+    return tableView == self.villainDeckTableView? self.villainDeckSets.count : self.heroDeckSets.count;
 }
 
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 110;
+    return 130;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     VillainDeckSetTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VillainDeckSetTableViewCell"];
-    
-    
-    
+    CardSet *cardSet = tableView == self.villainDeckTableView? [self.villainDeckSets objectAtIndex:indexPath.row] : [self.heroDeckSets objectAtIndex:indexPath.row];
+    cell.villainDeckDisplayNameLabel.text = cardSet.displayName;
+    cell.villainDeckImage.image = [UIImage imageNamed:cardSet.displayName];
     return cell;
 }
+
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
     cell.contentView.backgroundColor = [UIColor clearColor];
     cell.backgroundColor = [UIColor clearColor];
     [cell invalidateIntrinsicContentSize];
+}
+
+#pragma mark UIScrollViewDelegate
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    if (scrollView == self.mainScrollView) {
+        [self.backgroundScrollView setContentOffset:CGPointMake(scrollView.contentOffset.x * 0.75, 0)];
+        
+        if (scrollView.contentOffset.x < scrollView.bounds.size.width/2) {
+            [self.pageControl setCurrentPage:0];
+        }else{
+            [self.pageControl setCurrentPage:1];
+        }
+    }
+    
 }
 
 @end

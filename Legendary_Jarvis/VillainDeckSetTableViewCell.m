@@ -8,11 +8,21 @@
 
 #import "VillainDeckSetTableViewCell.h"
 
+@interface VillainDeckSetTableViewCell ()
+
+
+@end
+
 @implementation VillainDeckSetTableViewCell
 
 - (void)awakeFromNib{
     [super awakeFromNib];
     self.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    self.villainDeckImage.layer.borderColor = [[UIColor blackColor] colorWithAlphaComponent:1].CGColor;
+    self.villainDeckImage.layer.borderWidth = 3.f;
+    self.villainDeckImage.layer.cornerRadius = self.villainDeckImage.bounds.size.width/2;
+    self.villainDeckImage.clipsToBounds = YES;
 }
 
 @end
