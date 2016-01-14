@@ -22,7 +22,8 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *mainScrollView;
 
 
-@property (nonatomic) NSArray *mastermind;
+@property (nonatomic) Scheme *scheme;
+@property (nonatomic) Mastermind *mastermind;
 @property (nonatomic) NSArray *villainDeckSets;
 @property (nonatomic) NSArray *heroDeckSets;
 
@@ -89,7 +90,6 @@
             [self.pageControl setCurrentPage:1];
         }
     }
-    
 }
 
 @end

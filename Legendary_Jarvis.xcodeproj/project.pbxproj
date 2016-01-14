@@ -48,6 +48,8 @@
 		56D2FFCB1C3ECD66002DD3A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56D2FFCA1C3ECD66002DD3A2 /* Assets.xcassets */; };
 		56D2FFCE1C3ECD66002DD3A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D2FFCC1C3ECD66002DD3A2 /* LaunchScreen.storyboard */; };
 		56F6835C1C47E37000C0690D /* GradientTopBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F6835B1C47E37000C0690D /* GradientTopBar.m */; };
+		56F683631C48036700C0690D /* GameCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F683621C48036700C0690D /* GameCreator.m */; };
+		56F683671C480E6400C0690D /* NSArray+Randomness.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F683661C480E6400C0690D /* NSArray+Randomness.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +126,10 @@
 		56D2FFCF1C3ECD66002DD3A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56F6835A1C47E37000C0690D /* GradientTopBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientTopBar.h; sourceTree = "<group>"; };
 		56F6835B1C47E37000C0690D /* GradientTopBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientTopBar.m; sourceTree = "<group>"; };
+		56F683611C48036700C0690D /* GameCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCreator.h; sourceTree = "<group>"; };
+		56F683621C48036700C0690D /* GameCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCreator.m; sourceTree = "<group>"; };
+		56F683651C480E6400C0690D /* NSArray+Randomness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Randomness.h"; sourceTree = "<group>"; };
+		56F683661C480E6400C0690D /* NSArray+Randomness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Randomness.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,6 +294,8 @@
 				56D2FFC41C3ECD66002DD3A2 /* Main.storyboard */,
 				20525EFF1C44F05000393028 /* View Controllers and Views */,
 				563E917E1C43FF4600BD794F /* Data Storage */,
+				56F683601C48033B00C0690D /* Common Classes */,
+				56F683641C480E3E00C0690D /* Categories */,
 				563E91801C441F6500BD794F /* Resources */,
 				56D2FFCA1C3ECD66002DD3A2 /* Assets.xcassets */,
 				56D2FFCF1C3ECD66002DD3A2 /* Info.plist */,
@@ -302,6 +310,24 @@
 				56D2FFBC1C3ECD66002DD3A2 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		56F683601C48033B00C0690D /* Common Classes */ = {
+			isa = PBXGroup;
+			children = (
+				56F683611C48036700C0690D /* GameCreator.h */,
+				56F683621C48036700C0690D /* GameCreator.m */,
+			);
+			name = "Common Classes";
+			sourceTree = "<group>";
+		};
+		56F683641C480E3E00C0690D /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				56F683651C480E6400C0690D /* NSArray+Randomness.h */,
+				56F683661C480E6400C0690D /* NSArray+Randomness.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56F683671C480E6400C0690D /* NSArray+Randomness.m in Sources */,
 				20B7D6511C4463680025BA20 /* Mastermind+CoreDataProperties.m in Sources */,
 				56F6835C1C47E37000C0690D /* GradientTopBar.m in Sources */,
 				20B7D6471C4463680025BA20 /* HenchmanGroup+CoreDataProperties.m in Sources */,
@@ -393,6 +420,7 @@
 				20B7D64E1C4463680025BA20 /* Scheme.m in Sources */,
 				20B7D64A1C4463680025BA20 /* DisplayableEntity.m in Sources */,
 				20B7D6491C4463680025BA20 /* DisplayableEntity+CoreDataProperties.m in Sources */,
+				56F683631C48036700C0690D /* GameCreator.m in Sources */,
 				20B7D64B1C4463680025BA20 /* Expansion+CoreDataProperties.m in Sources */,
 				20B7D6461C4463680025BA20 /* CardSet.m in Sources */,
 				20B7D6401C4463680025BA20 /* SchemeRule.m in Sources */,
