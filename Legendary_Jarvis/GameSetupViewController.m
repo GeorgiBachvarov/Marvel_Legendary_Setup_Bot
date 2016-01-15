@@ -10,6 +10,7 @@
 #import "Mastermind.h"
 #import "VillainDeckSetTableViewCell.h"
 #import "DataManager.h"
+#import "GameCreator.h"
 
 @interface GameSetupViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
@@ -45,8 +46,20 @@
     self.schemeLabel.font = [UIFont fontWithName:@"ComicBook" size:18];
     self.mainScrollView.delegate = self;
     
-    self.villainDeckSets = [[DataManager sharedInstance] fetchAllVillainGroups];
-    self.heroDeckSets = [[DataManager sharedInstance] fetchAllHeroes];
+    [GameCreator createGameForPlayers:3 callback:^(NSArray *villainDeckSets, NSArray *heroDeckSets, Scheme *scheme, Mastermind *mastermind) {
+        self.scheme = scheme;
+        self.mastermind = mastermind;
+        self.villainDeckSets = villainDeckSets;
+        self.heroDeckSets = heroDeckSets;
+        [self reloadAll];
+    }];
+}
+
+- (void) reloadAll{
+    self.mastermindImageView.image = [UIImage imageNamed:self.mastermind.displayName];
+    self.schemeLabel.text = self.scheme.displayName;
+    [self.villainDeckTableView reloadData];
+    [self.heroDeckTableView reloadData];
 }
 
 #pragma mark UITableViewDataSource & UITableViewDelegate

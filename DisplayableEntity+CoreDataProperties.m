@@ -14,5 +14,6 @@
 @implementation DisplayableEntity (CoreDataProperties)
 
 @dynamic displayName;
+@dynamic isVetoed;
 
 @end

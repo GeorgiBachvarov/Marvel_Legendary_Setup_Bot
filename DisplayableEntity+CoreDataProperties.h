@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DisplayableEntity (CoreDataProperties)
 
 @property (nullable, nonatomic, retain) NSString *displayName;
+@property (nullable, nonatomic, retain) NSNumber *isVetoed;
 
 @end
 

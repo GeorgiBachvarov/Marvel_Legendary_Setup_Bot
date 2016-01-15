@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="14F1509" minimumToolsVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="14F1509" minimumToolsVersion="Automatic">
     <entity name="CardSet" representedClassName="CardSet" isAbstract="YES" parentEntity="DisplayableEntity" syncable="YES">
-        <attribute name="isVetoed" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <relationship name="partOfSchemeRules" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SchemeRule" inverseName="objects" inverseEntity="SchemeRule" syncable="YES"/>
     </entity>
     <entity name="DisplayableEntity" representedClassName="DisplayableEntity" isAbstract="YES" syncable="YES">
         <attribute name="displayName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isVetoed" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
     </entity>
     <entity name="EnemyGroup" representedClassName="EnemyGroup" isAbstract="YES" parentEntity="CardSet" syncable="YES">
         <relationship name="alwaysLeadBy" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Mastermind" inverseName="alwaysLeads" inverseEntity="Mastermind" syncable="YES"/>
@@ -41,8 +41,8 @@
         <relationship name="expansion" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Expansion" inverseName="villainGroups" inverseEntity="Expansion" syncable="YES"/>
     </entity>
     <elements>
-        <element name="CardSet" positionX="0" positionY="72" width="128" height="75"/>
-        <element name="DisplayableEntity" positionX="-9" positionY="72" width="128" height="60"/>
+        <element name="CardSet" positionX="0" positionY="72" width="128" height="60"/>
+        <element name="DisplayableEntity" positionX="-9" positionY="72" width="128" height="75"/>
         <element name="EnemyGroup" positionX="36" positionY="126" width="128" height="60"/>
         <element name="Expansion" positionX="18" positionY="63" width="128" height="120"/>
         <element name="HenchmanGroup" positionX="-36" positionY="9" width="128" height="60"/>

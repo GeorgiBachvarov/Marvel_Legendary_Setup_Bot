@@ -14,6 +14,5 @@
 @implementation CardSet (CoreDataProperties)
 
 @dynamic partOfSchemeRules;
-@dynamic isVetoed;
 
 @end

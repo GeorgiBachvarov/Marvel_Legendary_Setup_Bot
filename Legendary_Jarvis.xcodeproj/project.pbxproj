@@ -11,6 +11,7 @@
 		20525F021C44F16F00393028 /* NumberOfPlayersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20525F011C44F16F00393028 /* NumberOfPlayersViewController.m */; };
 		20525F051C44F1A100393028 /* FilterCardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20525F041C44F1A100393028 /* FilterCardsViewController.m */; };
 		20525F081C44F26A00393028 /* CardTypeDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20525F071C44F26A00393028 /* CardTypeDisplayViewController.m */; };
+		209618661C48E3F800A34EE2 /* NSMutableArray+Randomness.m in Sources */ = {isa = PBXBuildFile; fileRef = 209618651C48E3F800A34EE2 /* NSMutableArray+Randomness.m */; };
 		20B7D63F1C4463680025BA20 /* SchemeRule+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B7D6181C4463680025BA20 /* SchemeRule+CoreDataProperties.m */; };
 		20B7D6401C4463680025BA20 /* SchemeRule.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B7D61A1C4463680025BA20 /* SchemeRule.m */; };
 		20B7D6411C4463680025BA20 /* EnemyGroup+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B7D61C1C4463680025BA20 /* EnemyGroup+CoreDataProperties.m */; };
@@ -61,6 +62,8 @@
 		20525F041C44F1A100393028 /* FilterCardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterCardsViewController.m; sourceTree = "<group>"; };
 		20525F061C44F26A00393028 /* CardTypeDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardTypeDisplayViewController.h; sourceTree = "<group>"; };
 		20525F071C44F26A00393028 /* CardTypeDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardTypeDisplayViewController.m; sourceTree = "<group>"; };
+		209618641C48E3F800A34EE2 /* NSMutableArray+Randomness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Randomness.h"; sourceTree = "<group>"; };
+		209618651C48E3F800A34EE2 /* NSMutableArray+Randomness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Randomness.m"; sourceTree = "<group>"; };
 		20B7D6171C4463680025BA20 /* SchemeRule+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SchemeRule+CoreDataProperties.h"; path = "../SchemeRule+CoreDataProperties.h"; sourceTree = "<group>"; };
 		20B7D6181C4463680025BA20 /* SchemeRule+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SchemeRule+CoreDataProperties.m"; path = "../SchemeRule+CoreDataProperties.m"; sourceTree = "<group>"; };
 		20B7D6191C4463680025BA20 /* SchemeRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SchemeRule.h; path = ../SchemeRule.h; sourceTree = "<group>"; };
@@ -326,6 +329,8 @@
 			children = (
 				56F683651C480E6400C0690D /* NSArray+Randomness.h */,
 				56F683661C480E6400C0690D /* NSArray+Randomness.m */,
+				209618641C48E3F800A34EE2 /* NSMutableArray+Randomness.h */,
+				209618651C48E3F800A34EE2 /* NSMutableArray+Randomness.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -411,6 +416,7 @@
 				56F6835C1C47E37000C0690D /* GradientTopBar.m in Sources */,
 				20B7D6471C4463680025BA20 /* HenchmanGroup+CoreDataProperties.m in Sources */,
 				563E91851C4420A200BD794F /* DataManager.m in Sources */,
+				209618661C48E3F800A34EE2 /* NSMutableArray+Randomness.m in Sources */,
 				20B7D64C1C4463680025BA20 /* Expansion.m in Sources */,
 				56D2FFC01C3ECD66002DD3A2 /* AppDelegate.m in Sources */,
 				56D2FFC91C3ECD66002DD3A2 /* Legendary_Jarvis.xcdatamodeld in Sources */,
