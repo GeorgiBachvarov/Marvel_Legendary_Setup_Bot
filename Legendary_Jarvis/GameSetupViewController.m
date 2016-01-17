@@ -17,10 +17,17 @@
 @property (weak, nonatomic) IBOutlet UITableView *villainDeckTableView;
 @property (weak, nonatomic) IBOutlet UITableView *heroDeckTableView;
 @property (weak, nonatomic) IBOutlet UIImageView *mastermindImageView;
+
+
+
 @property (weak, nonatomic) IBOutlet UILabel *schemeLabel;
+
+- (IBAction)closeButtonTapped:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UIScrollView *backgroundScrollView;
 @property (weak, nonatomic) IBOutlet UIScrollView *mainScrollView;
+
+
 
 
 @property (nonatomic) Scheme *scheme;
@@ -46,7 +53,7 @@
     self.schemeLabel.font = [UIFont fontWithName:@"ComicBook" size:18];
     self.mainScrollView.delegate = self;
     
-    [GameCreator createGameForPlayers:3 callback:^(NSArray *villainDeckSets, NSArray *heroDeckSets, Scheme *scheme, Mastermind *mastermind) {
+    [GameCreator createGameForPlayers:self.numberOfPlayersForGame callback:^(NSArray *villainDeckSets, NSArray *heroDeckSets, Scheme *scheme, Mastermind *mastermind) {
         self.scheme = scheme;
         self.mastermind = mastermind;
         self.villainDeckSets = villainDeckSets;
@@ -103,6 +110,12 @@
             [self.pageControl setCurrentPage:1];
         }
     }
+}
+
+#pragma mark IBAction
+
+- (IBAction)closeButtonTapped:(id)sender {
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

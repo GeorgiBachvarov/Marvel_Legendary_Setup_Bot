@@ -32,6 +32,10 @@
 		20B7D6501C4463680025BA20 /* VillainGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B7D63A1C4463680025BA20 /* VillainGroup.m */; };
 		20B7D6511C4463680025BA20 /* Mastermind+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B7D63C1C4463680025BA20 /* Mastermind+CoreDataProperties.m */; };
 		20B7D6521C4463680025BA20 /* Mastermind.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B7D63E1C4463680025BA20 /* Mastermind.m */; };
+		20DFD7331C4C2FFC00DFC591 /* FilterCardsTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DFD7321C4C2FFC00DFC591 /* FilterCardsTableHeaderView.m */; };
+		20DFD7351C4C301C00DFC591 /* FilterCardsTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20DFD7341C4C301C00DFC591 /* FilterCardsTableHeaderView.xib */; };
+		20DFD73B1C4C3FFF00DFC591 /* FilteredCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DFD7391C4C3FFF00DFC591 /* FilteredCardTableViewCell.m */; };
+		20DFD73C1C4C3FFF00DFC591 /* FilteredCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20DFD73A1C4C3FFF00DFC591 /* FilteredCardTableViewCell.xib */; };
 		561F50201C46B4BC00BD5AD2 /* Comic Book Bold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 561F501B1C46B4BC00BD5AD2 /* Comic Book Bold Italic.otf */; };
 		561F50211C46B4BC00BD5AD2 /* Comic Book Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 561F501C1C46B4BC00BD5AD2 /* Comic Book Bold.otf */; };
 		561F50221C46B4BC00BD5AD2 /* Comic Book Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 561F501D1C46B4BC00BD5AD2 /* Comic Book Italic.otf */; };
@@ -104,6 +108,12 @@
 		20B7D63C1C4463680025BA20 /* Mastermind+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Mastermind+CoreDataProperties.m"; path = "../Mastermind+CoreDataProperties.m"; sourceTree = "<group>"; };
 		20B7D63D1C4463680025BA20 /* Mastermind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Mastermind.h; path = ../Mastermind.h; sourceTree = "<group>"; };
 		20B7D63E1C4463680025BA20 /* Mastermind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Mastermind.m; path = ../Mastermind.m; sourceTree = "<group>"; };
+		20DFD7311C4C2FFC00DFC591 /* FilterCardsTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterCardsTableHeaderView.h; sourceTree = "<group>"; };
+		20DFD7321C4C2FFC00DFC591 /* FilterCardsTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterCardsTableHeaderView.m; sourceTree = "<group>"; };
+		20DFD7341C4C301C00DFC591 /* FilterCardsTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterCardsTableHeaderView.xib; sourceTree = "<group>"; };
+		20DFD7381C4C3FFF00DFC591 /* FilteredCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilteredCardTableViewCell.h; sourceTree = "<group>"; };
+		20DFD7391C4C3FFF00DFC591 /* FilteredCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilteredCardTableViewCell.m; sourceTree = "<group>"; };
+		20DFD73A1C4C3FFF00DFC591 /* FilteredCardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilteredCardTableViewCell.xib; sourceTree = "<group>"; };
 		561F501B1C46B4BC00BD5AD2 /* Comic Book Bold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comic Book Bold Italic.otf"; sourceTree = "<group>"; };
 		561F501C1C46B4BC00BD5AD2 /* Comic Book Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comic Book Bold.otf"; sourceTree = "<group>"; };
 		561F501D1C46B4BC00BD5AD2 /* Comic Book Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comic Book Italic.otf"; sourceTree = "<group>"; };
@@ -149,13 +159,10 @@
 		20525EFF1C44F05000393028 /* View Controllers and Views */ = {
 			isa = PBXGroup;
 			children = (
+				20DFD7371C4C345E00DFC591 /* Number of Players */,
 				56984CEA1C46AE6600D7255E /* Game Setup */,
-				20525F001C44F16F00393028 /* NumberOfPlayersViewController.h */,
-				20525F011C44F16F00393028 /* NumberOfPlayersViewController.m */,
-				20525F031C44F1A100393028 /* FilterCardsViewController.h */,
-				20525F041C44F1A100393028 /* FilterCardsViewController.m */,
-				20525F061C44F26A00393028 /* CardTypeDisplayViewController.h */,
-				20525F071C44F26A00393028 /* CardTypeDisplayViewController.m */,
+				20DFD7301C4C2FA800DFC591 /* Settings */,
+				20DFD7361C4C345000DFC591 /* Card Type Display */,
 			);
 			name = "View Controllers and Views";
 			sourceTree = "<group>";
@@ -212,6 +219,39 @@
 				20B7D63C1C4463680025BA20 /* Mastermind+CoreDataProperties.m */,
 			);
 			name = "Auto-Generated";
+			sourceTree = "<group>";
+		};
+		20DFD7301C4C2FA800DFC591 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				20525F031C44F1A100393028 /* FilterCardsViewController.h */,
+				20525F041C44F1A100393028 /* FilterCardsViewController.m */,
+				20DFD7311C4C2FFC00DFC591 /* FilterCardsTableHeaderView.h */,
+				20DFD7321C4C2FFC00DFC591 /* FilterCardsTableHeaderView.m */,
+				20DFD7341C4C301C00DFC591 /* FilterCardsTableHeaderView.xib */,
+				20DFD7381C4C3FFF00DFC591 /* FilteredCardTableViewCell.h */,
+				20DFD7391C4C3FFF00DFC591 /* FilteredCardTableViewCell.m */,
+				20DFD73A1C4C3FFF00DFC591 /* FilteredCardTableViewCell.xib */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		20DFD7361C4C345000DFC591 /* Card Type Display */ = {
+			isa = PBXGroup;
+			children = (
+				20525F061C44F26A00393028 /* CardTypeDisplayViewController.h */,
+				20525F071C44F26A00393028 /* CardTypeDisplayViewController.m */,
+			);
+			name = "Card Type Display";
+			sourceTree = "<group>";
+		};
+		20DFD7371C4C345E00DFC591 /* Number of Players */ = {
+			isa = PBXGroup;
+			children = (
+				20525F001C44F16F00393028 /* NumberOfPlayersViewController.h */,
+				20525F011C44F16F00393028 /* NumberOfPlayersViewController.m */,
+			);
+			name = "Number of Players";
 			sourceTree = "<group>";
 		};
 		561F501A1C46B4BC00BD5AD2 /* comic_book */ = {
@@ -366,6 +406,7 @@
 				TargetAttributes = {
 					56D2FFB71C3ECD66002DD3A2 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = M352RPT82H;
 					};
 				};
 			};
@@ -395,9 +436,11 @@
 				561F50241C46B4BC00BD5AD2 /* Font License.txt in Resources */,
 				56D2FFCE1C3ECD66002DD3A2 /* LaunchScreen.storyboard in Resources */,
 				56984CF11C46AEC800D7255E /* VillainDeckSetTableViewCell.xib in Resources */,
+				20DFD73C1C4C3FFF00DFC591 /* FilteredCardTableViewCell.xib in Resources */,
 				56D2FFCB1C3ECD66002DD3A2 /* Assets.xcassets in Resources */,
 				561F50231C46B4BC00BD5AD2 /* Comic Book.otf in Resources */,
 				56D2FFC61C3ECD66002DD3A2 /* Main.storyboard in Resources */,
+				20DFD7351C4C301C00DFC591 /* FilterCardsTableHeaderView.xib in Resources */,
 				561F50221C46B4BC00BD5AD2 /* Comic Book Italic.otf in Resources */,
 				561F50201C46B4BC00BD5AD2 /* Comic Book Bold Italic.otf in Resources */,
 				561F50211C46B4BC00BD5AD2 /* Comic Book Bold.otf in Resources */,
@@ -421,6 +464,7 @@
 				56D2FFC01C3ECD66002DD3A2 /* AppDelegate.m in Sources */,
 				56D2FFC91C3ECD66002DD3A2 /* Legendary_Jarvis.xcdatamodeld in Sources */,
 				20B7D6431C4463680025BA20 /* Hero+CoreDataProperties.m in Sources */,
+				20DFD7331C4C2FFC00DFC591 /* FilterCardsTableHeaderView.m in Sources */,
 				20B7D6451C4463680025BA20 /* CardSet+CoreDataProperties.m in Sources */,
 				20525F081C44F26A00393028 /* CardTypeDisplayViewController.m in Sources */,
 				20B7D64E1C4463680025BA20 /* Scheme.m in Sources */,
@@ -442,6 +486,7 @@
 				563E91881C44243F00BD794F /* DataBuilder.m in Sources */,
 				20B7D6421C4463680025BA20 /* EnemyGroup.m in Sources */,
 				20B7D6501C4463680025BA20 /* VillainGroup.m in Sources */,
+				20DFD73B1C4C3FFF00DFC591 /* FilteredCardTableViewCell.m in Sources */,
 				20B7D6521C4463680025BA20 /* Mastermind.m in Sources */,
 				20B7D6411C4463680025BA20 /* EnemyGroup+CoreDataProperties.m in Sources */,
 				56984CF41C46B08000D7255E /* BorderedLabel.m in Sources */,
@@ -557,10 +602,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Legendary_Jarvis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mentormate.Legendary-Jarvis";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -569,10 +617,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Legendary_Jarvis/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mentormate.Legendary-Jarvis";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

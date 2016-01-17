@@ -78,9 +78,17 @@
     rule1_1.ruleType = @(SchemeRuleTypeAddExtraHenchmanGroupToVillainDeck);
     rule1_1.objectCount = @(1);
     [scheme1_3 addRulesObject:rule1_1];
-
     
-    return;
+    SchemeRule *rule1_2 = [[SchemeRule alloc] init];
+    rule1_2.ruleType = @(SchemeRuleTypeAddSpecificVillainGroupToVillainDeck);
+    rule1_2.objects = [NSSet setWithObjects:villainGroup1_6, nil];;
+    [scheme1_6 addRulesObject:rule1_2];
+    
+    SchemeRule *rule1_3 = [[SchemeRule alloc] init];
+    rule1_3.ruleType = @(SchemeRuleTypeSetNumberOfHeroes);
+    rule1_3.objectCount = @(6);
+    [scheme1_6 addRulesObject:rule1_3];
+
     
 #pragma mark Dark City
     
@@ -162,7 +170,6 @@
     rule2_5.objectCount = @(1);
     [scheme2_8 addRulesObject:rule2_5];
     
-    
 #pragma mark Secret Wars Vol 1
     
     //init all data
@@ -227,7 +234,7 @@
     SchemeRule *rule3_3 = [[SchemeRule alloc] init];
     rule3_3.ruleType = @(SchemeRuleTypeAddExtraMastermindToVillainDeck);
     rule3_3.objectCount = @(1);
-    [scheme3_8 addRulesObject:rule3_2];
+    [scheme3_8 addRulesObject:rule3_3];
     
     SchemeRule *rule3_4 = [[SchemeRule alloc] init];
     rule3_4.ruleType = @(SchemeRuleTypeAddExtraVillainGroupToVillainDeck);

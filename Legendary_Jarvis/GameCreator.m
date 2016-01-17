@@ -18,11 +18,11 @@
 
 + (void)createGameForPlayers:(NSInteger)numberOfPlayers callback:(GameCreatorCallbackBlock)callback{
     
-    NSMutableArray *schemeBank = [[[DataManager sharedInstance] fetchAllSchemes] mutableCopy];
-    NSMutableArray *mastermindBank = [[[DataManager sharedInstance] fetchAllMasterminds] mutableCopy];
-    NSMutableArray *heroesBank = [[[DataManager sharedInstance] fetchAllHeroes] mutableCopy];
-    NSMutableArray *villainGroupBank = [[[DataManager sharedInstance] fetchAllVillainGroups] mutableCopy];
-    NSMutableArray *henchmanGroupBank = [[[DataManager sharedInstance] fetchAllHenchmanGroups] mutableCopy];
+    NSMutableArray *schemeBank = [[[DataManager sharedInstance] fetchAllNotBannedSchemes] mutableCopy];
+    NSMutableArray *mastermindBank = [[[DataManager sharedInstance] fetchAllNotBannedMasterminds] mutableCopy];
+    NSMutableArray *heroesBank = [[[DataManager sharedInstance] fetchAllNotBannedHeroes] mutableCopy];
+    NSMutableArray *villainGroupBank = [[[DataManager sharedInstance] fetchAllNotBannedVillainGroups] mutableCopy];
+    NSMutableArray *henchmanGroupBank = [[[DataManager sharedInstance] fetchAllNotBannedHenchmanGroups] mutableCopy];
     
     NSInteger numberOfVillainGroups = [self numberOfVillainGroupsForPlayers:numberOfPlayers];
     NSInteger numberOfHenchmanGroups = [self numberOfHenchmanGroupsForPlayers:numberOfPlayers];
@@ -35,6 +35,9 @@
     
     
     scheme = [schemeBank randomObject];
+//    NSFetchRequest *fr = [NSFetchRequest fetchRequestWithEntityName:@"Scheme"];
+//    [fr setPredicate:[NSPredicate predicateWithFormat:@"displayName == %@",@"Save Humanity"]];
+//    scheme = [[[[DataManager sharedInstance] managedObjectContext] executeFetchRequest:fr error:nil] firstObject];
     
     //apply scheme rules to setup first
     
@@ -66,7 +69,7 @@
             }
             case SchemeRuleTypeAddExtraHeroToVillainDeck:{
                 
-                if (rule.objects) {
+                if (rule.objects.count) {
                     [villainDeckSets addObjectsFromArray:rule.objects.allObjects];
                     [heroesBank removeObjectsInArray:rule.objects.allObjects];
                 }else{
@@ -79,13 +82,22 @@
             }
             case SchemeRuleTypeAddExtraMastermindToVillainDeck:{
                 
-                if (rule.objects) {
+                if (rule.objects.count) {
                     [villainDeckSets addObjectsFromArray:rule.objects.allObjects];
                     [mastermindBank removeObjectsInArray:rule.objects.allObjects];
                 }else{
                     for (NSInteger villainMastermindsCounter = 0; villainMastermindsCounter < rule.objectCount.integerValue; villainMastermindsCounter++) {
                         [villainDeckSets addObject:[mastermindBank removeRandomObject]];
                     }
+                }
+                
+                break;
+            }
+            case SchemeRuleTypeAddSpecificVillainGroupToVillainDeck:{
+                
+                if (rule.objects.count) {
+                    [villainDeckSets addObjectsFromArray:rule.objects.allObjects];
+                    [villainGroupBank removeObjectsInArray:rule.objects.allObjects];
                 }
                 
                 break;
@@ -106,6 +118,23 @@
     
     if (!mastermind) {
         mastermind = [mastermindBank removeRandomObject];
+        
+        if (numberOfHenchmanGroups + numberOfVillainGroups) {
+            for (CardSet *alwaysLeadSet in mastermind.alwaysLeads.allObjects) {
+                if ([alwaysLeadSet isKindOfClass:[Mastermind class]]) {
+                    [mastermindBank removeObject:alwaysLeadSet];
+                    [villainDeckSets addObject:alwaysLeadSet];
+                }else if ([alwaysLeadSet isKindOfClass:[VillainGroup class]]) {
+                    [villainGroupBank removeObject:alwaysLeadSet];
+                    [villainDeckSets addObject:alwaysLeadSet];
+                    numberOfVillainGroups--;
+                }else if ([alwaysLeadSet isKindOfClass:[HenchmanGroup class]]){
+                    [henchmanGroupBank removeObject:alwaysLeadSet];
+                    [villainDeckSets addObject:alwaysLeadSet];
+                    numberOfHenchmanGroups--;
+                }
+            }
+        }
     }
     
     for (NSInteger remainingVillaingGroupsCounter = 0; remainingVillaingGroupsCounter < numberOfVillainGroups; remainingVillaingGroupsCounter++) {

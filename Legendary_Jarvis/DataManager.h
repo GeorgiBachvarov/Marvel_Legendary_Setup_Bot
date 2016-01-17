@@ -29,5 +29,20 @@
 - (NSArray *) fetchAllVillainGroups;
 - (NSArray *) fetchAllHenchmanGroups;
 - (NSArray *) fetchAllHeroes;
+- (NSArray *) fetchAllEnemyGroups;
+
+- (NSArray *) fetchAllNotBannedSchemes;
+- (NSArray *) fetchAllNotBannedMasterminds;
+- (NSArray *) fetchAllNotBannedVillainGroups;
+- (NSArray *) fetchAllNotBannedHenchmanGroups;
+- (NSArray *) fetchAllNotBannedHeroes;
+- (NSArray *) fetchAllNotBannedEnemyGroups;
+
+- (NSArray *) fetchAllBannedSchemes;
+- (NSArray *) fetchAllBannedMasterminds;
+- (NSArray *) fetchAllBannedVillainGroups;
+- (NSArray *) fetchAllBannedHenchmanGroups;
+- (NSArray *) fetchAllBannedHeroes;
+- (NSArray *) fetchAllBannedEnemyGroups;
 
 @end

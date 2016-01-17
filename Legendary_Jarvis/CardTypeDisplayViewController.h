@@ -10,4 +10,6 @@
 
 @interface CardTypeDisplayViewController : UIViewController
 
+@property (nonatomic, assign) Class cardTypeClass;
+
 @end

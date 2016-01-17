@@ -1,22 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WL5-bt-swm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Qrl-0v-Rdq">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <customFonts key="customFonts">
+        <mutableArray key="Comic Book Bold.otf">
+            <string>ComicBook-Bold</string>
+            <string>ComicBook-Bold</string>
+            <string>ComicBook-Bold</string>
+            <string>ComicBook-Bold</string>
+            <string>ComicBook-Bold</string>
+        </mutableArray>
         <mutableArray key="Comic Book.otf">
             <string>ComicBook</string>
             <string>ComicBook</string>
         </mutableArray>
     </customFonts>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="qqs-mB-j1S">
+            <objects>
+                <navigationController id="Qrl-0v-Rdq" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UIu-Cp-Rv7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4iO-j1-STl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xJa-hd-DXe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-372" y="420"/>
+        </scene>
         <!--Number Of Players View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="NumberOfPlayersViewController" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="NumberOfPlayersViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -24,16 +49,115 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2F-vu-dEC">
+                                <rect key="frame" x="157.5" y="134" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="M2F-vu-dEC" secondAttribute="height" id="eh0-cU-LPE"/>
+                                    <constraint firstAttribute="height" constant="100" id="uIN-Rz-Z2y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ComicBook-Bold" family="Comic Book" pointSize="64"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onePlayerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bFI-y9-gBl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaQ-Rv-aI0">
+                                <rect key="frame" x="0.0" y="234" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="OgO-sc-Vdh"/>
+                                    <constraint firstAttribute="width" secondItem="kaQ-Rv-aI0" secondAttribute="height" id="ooO-6T-yY0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ComicBook-Bold" family="Comic Book" pointSize="64"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="twoPlayerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D39-VB-J9O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ran-q3-5Y1">
+                                <rect key="frame" x="314" y="234" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="49T-D7-rD9"/>
+                                    <constraint firstAttribute="width" secondItem="ran-q3-5Y1" secondAttribute="height" id="tPg-Gn-pX4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ComicBook-Bold" family="Comic Book" pointSize="64"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="threePlayerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Pn-7Y-g3Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBl-3c-LbM">
+                                <rect key="frame" x="50" y="354" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pBl-3c-LbM" secondAttribute="height" id="ejy-vx-7Fm"/>
+                                    <constraint firstAttribute="height" constant="100" id="m2L-ba-OCn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ComicBook-Bold" family="Comic Book" pointSize="64"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="fourPlayerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zIC-eh-bDg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfs-3w-HsN">
+                                <rect key="frame" x="264" y="354" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="3ek-lg-UYv"/>
+                                    <constraint firstAttribute="width" secondItem="Yfs-3w-HsN" secondAttribute="height" id="WOf-zQ-0x8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ComicBook-Bold" family="Comic Book" pointSize="64"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="fivePlayerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="936-Jm-NgJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Yfs-3w-HsN" firstAttribute="width" secondItem="Yfs-3w-HsN" secondAttribute="height" id="2rj-JV-ZMs"/>
+                            <constraint firstItem="M2F-vu-dEC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2vV-ly-DZn"/>
+                            <constraint firstItem="ran-q3-5Y1" firstAttribute="width" secondItem="ran-q3-5Y1" secondAttribute="height" id="4Bz-Mn-f4G"/>
+                            <constraint firstItem="Yfs-3w-HsN" firstAttribute="centerY" secondItem="pBl-3c-LbM" secondAttribute="centerY" id="4eo-eG-OAC"/>
+                            <constraint firstItem="pBl-3c-LbM" firstAttribute="width" secondItem="pBl-3c-LbM" secondAttribute="height" id="7w1-18-9kJ"/>
+                            <constraint firstItem="kaQ-Rv-aI0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="8BB-Bm-oSE"/>
+                            <constraint firstItem="kaQ-Rv-aI0" firstAttribute="top" secondItem="M2F-vu-dEC" secondAttribute="bottom" id="OgL-6B-hA3"/>
+                            <constraint firstItem="ran-q3-5Y1" firstAttribute="centerY" secondItem="kaQ-Rv-aI0" secondAttribute="centerY" id="QyD-Bl-Wxh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ran-q3-5Y1" secondAttribute="trailing" constant="-20" id="VAt-ww-ysa"/>
+                            <constraint firstItem="ran-q3-5Y1" firstAttribute="width" secondItem="ran-q3-5Y1" secondAttribute="height" id="VnT-F5-cYM"/>
+                            <constraint firstItem="kaQ-Rv-aI0" firstAttribute="width" secondItem="kaQ-Rv-aI0" secondAttribute="height" id="aqJ-6I-UaD"/>
+                            <constraint firstItem="Yfs-3w-HsN" firstAttribute="width" secondItem="Yfs-3w-HsN" secondAttribute="height" id="cAL-So-bt5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Yfs-3w-HsN" secondAttribute="trailing" constant="30" id="hs2-ee-PMZ"/>
+                            <constraint firstItem="pBl-3c-LbM" firstAttribute="width" secondItem="pBl-3c-LbM" secondAttribute="height" id="qSL-V5-4Bn"/>
+                            <constraint firstItem="M2F-vu-dEC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="rAn-0O-J0O"/>
+                            <constraint firstItem="Yfs-3w-HsN" firstAttribute="width" secondItem="Yfs-3w-HsN" secondAttribute="height" id="tOX-eb-Bqg"/>
+                            <constraint firstItem="pBl-3c-LbM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="vty-EF-dOr"/>
+                            <constraint firstItem="pBl-3c-LbM" firstAttribute="top" secondItem="kaQ-Rv-aI0" secondAttribute="bottom" constant="20" id="ze2-db-edi"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="7K9-L1-sxZ"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <segue destination="WL5-bt-swm" kind="show" identifier="numberOfPlayersToGameSetupViewController" id="4Sp-9C-FgY"/>
-                        <segue destination="AxV-y3-ZUZ" kind="presentation" id="ZZL-qV-wii"/>
+                        <outletCollection property="buttons" destination="M2F-vu-dEC" id="RP6-Ea-ehh"/>
+                        <outletCollection property="buttons" destination="kaQ-Rv-aI0" id="EmW-9H-aZb"/>
+                        <outletCollection property="buttons" destination="ran-q3-5Y1" id="ypx-L4-Hai"/>
+                        <outletCollection property="buttons" destination="pBl-3c-LbM" id="Y5L-rN-ZG8"/>
+                        <outletCollection property="buttons" destination="Yfs-3w-HsN" id="8M7-NL-j3G"/>
+                        <segue destination="WL5-bt-swm" kind="presentation" identifier="NumberOfPlayersToGameSetupViewController" id="4Sp-9C-FgY"/>
+                        <segue destination="AxV-y3-ZUZ" kind="show" identifier="NumberOfPlayersToFilterCardsSegue" id="ZZL-qV-wii"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="275" y="420"/>
         </scene>
         <!--Game Setup View Controller-->
         <scene sceneID="xqo-V7-lFC">
@@ -86,7 +210,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="157"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secret Invasion of The Skrull Shapeshifters" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6i-gr-ehh">
-                                                                <rect key="frame" x="42" y="40" width="330" height="57"/>
+                                                                <rect key="frame" x="42" y="40" width="329.5" height="57"/>
                                                                 <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="25"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -182,6 +306,17 @@
                                     <constraint firstAttribute="bottom" secondItem="V9m-mX-epD" secondAttribute="bottom" id="vWx-6S-tJg"/>
                                 </constraints>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptM-Ac-woX">
+                                <rect key="frame" x="369" y="20" width="30" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Sx4-rM-hKO"/>
+                                    <constraint firstAttribute="height" constant="25" id="dLS-sK-gQs"/>
+                                </constraints>
+                                <state key="normal" image="cross"/>
+                                <connections>
+                                    <action selector="closeButtonTapped:" destination="WL5-bt-swm" eventType="touchUpInside" id="UiT-LO-KSq"/>
+                                </connections>
+                            </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="OYu-sW-eO1">
                                 <rect key="frame" x="195" y="10" width="23" height="37"/>
                             </pageControl>
@@ -195,6 +330,7 @@
                             <constraint firstItem="dtb-If-jC2" firstAttribute="height" secondItem="Im2-4r-jtq" secondAttribute="height" id="DZY-Lf-Ur8"/>
                             <constraint firstItem="dtb-If-jC2" firstAttribute="centerX" secondItem="Im2-4r-jtq" secondAttribute="centerX" id="G02-6o-Shd"/>
                             <constraint firstItem="OYu-sW-eO1" firstAttribute="top" secondItem="pAP-8L-ZyR" secondAttribute="bottom" constant="-10" id="IRq-5R-2qC"/>
+                            <constraint firstItem="ptM-Ac-woX" firstAttribute="top" secondItem="pAP-8L-ZyR" secondAttribute="bottom" id="Iiq-kF-kmg"/>
                             <constraint firstItem="V9m-mX-epD" firstAttribute="width" secondItem="ZdY-8V-rRA" secondAttribute="width" multiplier="2" id="JyD-Ri-bTJ"/>
                             <constraint firstItem="Im2-4r-jtq" firstAttribute="centerX" secondItem="ZdY-8V-rRA" secondAttribute="centerX" id="MSY-pk-qUP"/>
                             <constraint firstItem="x9V-1A-UgD" firstAttribute="width" secondItem="ZdY-8V-rRA" secondAttribute="width" id="aFJ-Nb-ha5"/>
@@ -203,6 +339,7 @@
                             <constraint firstItem="dtb-If-jC2" firstAttribute="width" secondItem="Im2-4r-jtq" secondAttribute="width" id="hQh-rH-hMC"/>
                             <constraint firstItem="V9m-mX-epD" firstAttribute="height" secondItem="ZdY-8V-rRA" secondAttribute="height" id="o56-0b-KTJ"/>
                             <constraint firstItem="xlL-Iq-Mwq" firstAttribute="width" secondItem="ZdY-8V-rRA" secondAttribute="width" id="pZb-4q-mJZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ptM-Ac-woX" secondAttribute="trailing" constant="-5" id="r7S-tk-ti9"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
@@ -218,7 +355,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ex7-gR-fef" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1028" y="429"/>
+            <point key="canvasLocation" x="845" y="420"/>
         </scene>
         <!--Filter Cards View Controller-->
         <scene sceneID="ydY-de-I4Q">
@@ -231,16 +368,33 @@
                     <view key="view" contentMode="scaleToFill" id="Adj-XP-8Hp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pDQ-g6-tTR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="AxV-y3-ZUZ" id="PGy-ba-zVg"/>
+                                    <outlet property="delegate" destination="AxV-y3-ZUZ" id="r1T-bj-ioy"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pDQ-g6-tTR" firstAttribute="width" secondItem="Adj-XP-8Hp" secondAttribute="width" id="0BF-VT-svT"/>
+                            <constraint firstItem="pDQ-g6-tTR" firstAttribute="height" secondItem="Adj-XP-8Hp" secondAttribute="height" id="d7I-CH-vnb"/>
+                            <constraint firstItem="pDQ-g6-tTR" firstAttribute="centerY" secondItem="Adj-XP-8Hp" secondAttribute="centerY" id="iE1-q4-MEf"/>
+                            <constraint firstItem="pDQ-g6-tTR" firstAttribute="centerX" secondItem="Adj-XP-8Hp" secondAttribute="centerX" id="usJ-e7-zXC"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <segue destination="Nf9-z4-3Oh" kind="show" id="rsQ-Aq-Gfs"/>
+                        <outlet property="tableView" destination="pDQ-g6-tTR" id="AV5-aC-xWH"/>
+                        <segue destination="Nf9-z4-3Oh" kind="show" identifier="FilterCardsToCardTypeDisplaySegue" id="rsQ-Aq-Gfs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pCU-0i-KxX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="237" y="1278"/>
+            <point key="canvasLocation" x="275" y="1286"/>
         </scene>
         <!--Card Type Display View Controller-->
         <scene sceneID="jYZ-Up-E1C">
@@ -253,17 +407,37 @@
                     <view key="view" contentMode="scaleToFill" id="177-dg-Gns">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="55O-D2-tvL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Nf9-z4-3Oh" id="TMG-1n-b22"/>
+                                    <outlet property="delegate" destination="Nf9-z4-3Oh" id="mVQ-Pi-zVX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="55O-D2-tvL" firstAttribute="centerY" secondItem="177-dg-Gns" secondAttribute="centerY" id="6Kn-Ge-e9h"/>
+                            <constraint firstItem="55O-D2-tvL" firstAttribute="height" secondItem="177-dg-Gns" secondAttribute="height" id="Epf-Fn-Fku"/>
+                            <constraint firstItem="55O-D2-tvL" firstAttribute="centerX" secondItem="177-dg-Gns" secondAttribute="centerX" id="Upf-el-yER"/>
+                            <constraint firstItem="55O-D2-tvL" firstAttribute="width" secondItem="177-dg-Gns" secondAttribute="width" id="xPG-C5-OEe"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="tableView" destination="55O-D2-tvL" id="Gwo-EY-rXR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oi4-3y-OtT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="845" y="1278"/>
+            <point key="canvasLocation" x="845" y="1286"/>
         </scene>
     </scenes>
     <resources>
         <image name="Dr. Doom" width="128" height="128"/>
         <image name="background" width="439" height="262"/>
+        <image name="cross" width="320" height="217"/>
     </resources>
 </document>

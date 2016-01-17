@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+#define TABLE_SECTION_HEROES 0
+#define TABLE_SECTION_MASTERMINDS 1
+#define TABLE_SECTION_SCHEMES 2
+#define TABLE_SECTION_VILLAINS 3
+
 @interface FilterCardsViewController : UIViewController
 
 @end
