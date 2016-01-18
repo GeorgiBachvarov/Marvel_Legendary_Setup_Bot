@@ -6,8 +6,10 @@
 //  Copyright © 2016 Georgi Bachvarov. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "DataManager.h"
 #import "DataBuilder.h"
+
 
 @interface DataManager ()
 
@@ -71,6 +73,12 @@
         
         if (databaseInitializationIsNeeded) {
             [DataBuilder buildLegendaryData];
+            
+            NSError *error;
+            [self.managedObjectContext save:&error];
+            if (error) {
+                NSLog(@"db init failed");
+            }
         }
     });
 }

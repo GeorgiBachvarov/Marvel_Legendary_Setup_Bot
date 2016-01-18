@@ -104,7 +104,7 @@
             }
             case SchemeRuleTypeSetNumberOfHeroes:{
                 
-                numberOfHeroes += rule.objectCount.integerValue;
+                numberOfHeroes = rule.objectCount.integerValue;
                 
                 break;
             }
