@@ -13,6 +13,8 @@
 
 @implementation Expansion (CoreDataProperties)
 
+@dynamic isOwned;
+@dynamic releaseDate;
 @dynamic henchmanGroups;
 @dynamic heroes;
 @dynamic masterminds;

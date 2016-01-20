@@ -18,6 +18,7 @@
 @interface FilterCardsTableHeaderView : UIView
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UIButton *addButton;
 @property (nonatomic, weak) id <FilterCardsTableHeaderViewDelegate> delegate;
 
 @end

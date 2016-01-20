@@ -36,6 +36,7 @@
 		20DFD7351C4C301C00DFC591 /* FilterCardsTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20DFD7341C4C301C00DFC591 /* FilterCardsTableHeaderView.xib */; };
 		20DFD73B1C4C3FFF00DFC591 /* FilteredCardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20DFD7391C4C3FFF00DFC591 /* FilteredCardTableViewCell.m */; };
 		20DFD73C1C4C3FFF00DFC591 /* FilteredCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20DFD73A1C4C3FFF00DFC591 /* FilteredCardTableViewCell.xib */; };
+		5609C1221C4FB99A00002BF8 /* NSDate+Legendary.m in Sources */ = {isa = PBXBuildFile; fileRef = 5609C1211C4FB99A00002BF8 /* NSDate+Legendary.m */; };
 		561F50201C46B4BC00BD5AD2 /* Comic Book Bold Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 561F501B1C46B4BC00BD5AD2 /* Comic Book Bold Italic.otf */; };
 		561F50211C46B4BC00BD5AD2 /* Comic Book Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 561F501C1C46B4BC00BD5AD2 /* Comic Book Bold.otf */; };
 		561F50221C46B4BC00BD5AD2 /* Comic Book Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 561F501D1C46B4BC00BD5AD2 /* Comic Book Italic.otf */; };
@@ -43,6 +44,10 @@
 		561F50241C46B4BC00BD5AD2 /* Font License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 561F501F1C46B4BC00BD5AD2 /* Font License.txt */; };
 		563E91851C4420A200BD794F /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E91841C4420A200BD794F /* DataManager.m */; };
 		563E91881C44243F00BD794F /* DataBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 563E91871C44243F00BD794F /* DataBuilder.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		568EF7DF1C4FAD2C00B6A8EA /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568EF7DE1C4FAD2C00B6A8EA /* SettingsViewController.m */; };
+		568EF7E31C4FB16F00B6A8EA /* ExpansionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 568EF7E21C4FB16F00B6A8EA /* ExpansionsViewController.m */; };
+		568EF7E71C4FB19400B6A8EA /* ExpansionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 568EF7E51C4FB19400B6A8EA /* ExpansionTableViewCell.m */; };
+		568EF7E81C4FB19400B6A8EA /* ExpansionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568EF7E61C4FB19400B6A8EA /* ExpansionTableViewCell.xib */; };
 		56984CED1C46AEA100D7255E /* VillainDeckSetTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 56984CEC1C46AEA100D7255E /* VillainDeckSetTableViewCell.m */; };
 		56984CF11C46AEC800D7255E /* VillainDeckSetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56984CF01C46AEC800D7255E /* VillainDeckSetTableViewCell.xib */; };
 		56984CF41C46B08000D7255E /* BorderedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 56984CF31C46B08000D7255E /* BorderedLabel.m */; };
@@ -114,6 +119,8 @@
 		20DFD7381C4C3FFF00DFC591 /* FilteredCardTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilteredCardTableViewCell.h; sourceTree = "<group>"; };
 		20DFD7391C4C3FFF00DFC591 /* FilteredCardTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilteredCardTableViewCell.m; sourceTree = "<group>"; };
 		20DFD73A1C4C3FFF00DFC591 /* FilteredCardTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilteredCardTableViewCell.xib; sourceTree = "<group>"; };
+		5609C1201C4FB99A00002BF8 /* NSDate+Legendary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Legendary.h"; sourceTree = "<group>"; };
+		5609C1211C4FB99A00002BF8 /* NSDate+Legendary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Legendary.m"; sourceTree = "<group>"; };
 		561F501B1C46B4BC00BD5AD2 /* Comic Book Bold Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comic Book Bold Italic.otf"; sourceTree = "<group>"; };
 		561F501C1C46B4BC00BD5AD2 /* Comic Book Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comic Book Bold.otf"; sourceTree = "<group>"; };
 		561F501D1C46B4BC00BD5AD2 /* Comic Book Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comic Book Italic.otf"; sourceTree = "<group>"; };
@@ -123,6 +130,13 @@
 		563E91841C4420A200BD794F /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
 		563E91861C44243F00BD794F /* DataBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBuilder.h; sourceTree = "<group>"; };
 		563E91871C44243F00BD794F /* DataBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBuilder.m; sourceTree = "<group>"; };
+		568EF7DD1C4FAD2C00B6A8EA /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		568EF7DE1C4FAD2C00B6A8EA /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		568EF7E11C4FB16F00B6A8EA /* ExpansionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpansionsViewController.h; sourceTree = "<group>"; };
+		568EF7E21C4FB16F00B6A8EA /* ExpansionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpansionsViewController.m; sourceTree = "<group>"; };
+		568EF7E41C4FB19400B6A8EA /* ExpansionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpansionTableViewCell.h; sourceTree = "<group>"; };
+		568EF7E51C4FB19400B6A8EA /* ExpansionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpansionTableViewCell.m; sourceTree = "<group>"; };
+		568EF7E61C4FB19400B6A8EA /* ExpansionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpansionTableViewCell.xib; sourceTree = "<group>"; };
 		56984CEB1C46AEA100D7255E /* VillainDeckSetTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VillainDeckSetTableViewCell.h; sourceTree = "<group>"; };
 		56984CEC1C46AEA100D7255E /* VillainDeckSetTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VillainDeckSetTableViewCell.m; sourceTree = "<group>"; };
 		56984CF01C46AEC800D7255E /* VillainDeckSetTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VillainDeckSetTableViewCell.xib; sourceTree = "<group>"; };
@@ -162,7 +176,6 @@
 				20DFD7371C4C345E00DFC591 /* Number of Players */,
 				56984CEA1C46AE6600D7255E /* Game Setup */,
 				20DFD7301C4C2FA800DFC591 /* Settings */,
-				20DFD7361C4C345000DFC591 /* Card Type Display */,
 			);
 			name = "View Controllers and Views";
 			sourceTree = "<group>";
@@ -224,14 +237,11 @@
 		20DFD7301C4C2FA800DFC591 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				20525F031C44F1A100393028 /* FilterCardsViewController.h */,
-				20525F041C44F1A100393028 /* FilterCardsViewController.m */,
-				20DFD7311C4C2FFC00DFC591 /* FilterCardsTableHeaderView.h */,
-				20DFD7321C4C2FFC00DFC591 /* FilterCardsTableHeaderView.m */,
-				20DFD7341C4C301C00DFC591 /* FilterCardsTableHeaderView.xib */,
-				20DFD7381C4C3FFF00DFC591 /* FilteredCardTableViewCell.h */,
-				20DFD7391C4C3FFF00DFC591 /* FilteredCardTableViewCell.m */,
-				20DFD73A1C4C3FFF00DFC591 /* FilteredCardTableViewCell.xib */,
+				568EF7DD1C4FAD2C00B6A8EA /* SettingsViewController.h */,
+				568EF7DE1C4FAD2C00B6A8EA /* SettingsViewController.m */,
+				568EF7E01C4FB15C00B6A8EA /* Expansions */,
+				568EF7DC1C4FAD0000B6A8EA /* Filter Cards */,
+				20DFD7361C4C345000DFC591 /* Card Type Display */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -294,6 +304,33 @@
 				561F501A1C46B4BC00BD5AD2 /* comic_book */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		568EF7DC1C4FAD0000B6A8EA /* Filter Cards */ = {
+			isa = PBXGroup;
+			children = (
+				20525F031C44F1A100393028 /* FilterCardsViewController.h */,
+				20525F041C44F1A100393028 /* FilterCardsViewController.m */,
+				20DFD7311C4C2FFC00DFC591 /* FilterCardsTableHeaderView.h */,
+				20DFD7321C4C2FFC00DFC591 /* FilterCardsTableHeaderView.m */,
+				20DFD7341C4C301C00DFC591 /* FilterCardsTableHeaderView.xib */,
+				20DFD7381C4C3FFF00DFC591 /* FilteredCardTableViewCell.h */,
+				20DFD7391C4C3FFF00DFC591 /* FilteredCardTableViewCell.m */,
+				20DFD73A1C4C3FFF00DFC591 /* FilteredCardTableViewCell.xib */,
+			);
+			name = "Filter Cards";
+			sourceTree = "<group>";
+		};
+		568EF7E01C4FB15C00B6A8EA /* Expansions */ = {
+			isa = PBXGroup;
+			children = (
+				568EF7E11C4FB16F00B6A8EA /* ExpansionsViewController.h */,
+				568EF7E21C4FB16F00B6A8EA /* ExpansionsViewController.m */,
+				568EF7E41C4FB19400B6A8EA /* ExpansionTableViewCell.h */,
+				568EF7E51C4FB19400B6A8EA /* ExpansionTableViewCell.m */,
+				568EF7E61C4FB19400B6A8EA /* ExpansionTableViewCell.xib */,
+			);
+			name = Expansions;
 			sourceTree = "<group>";
 		};
 		56984CEA1C46AE6600D7255E /* Game Setup */ = {
@@ -371,6 +408,8 @@
 				56F683661C480E6400C0690D /* NSArray+Randomness.m */,
 				209618641C48E3F800A34EE2 /* NSMutableArray+Randomness.h */,
 				209618651C48E3F800A34EE2 /* NSMutableArray+Randomness.m */,
+				5609C1201C4FB99A00002BF8 /* NSDate+Legendary.h */,
+				5609C1211C4FB99A00002BF8 /* NSDate+Legendary.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -436,6 +475,7 @@
 				561F50241C46B4BC00BD5AD2 /* Font License.txt in Resources */,
 				56D2FFCE1C3ECD66002DD3A2 /* LaunchScreen.storyboard in Resources */,
 				56984CF11C46AEC800D7255E /* VillainDeckSetTableViewCell.xib in Resources */,
+				568EF7E81C4FB19400B6A8EA /* ExpansionTableViewCell.xib in Resources */,
 				20DFD73C1C4C3FFF00DFC591 /* FilteredCardTableViewCell.xib in Resources */,
 				56D2FFCB1C3ECD66002DD3A2 /* Assets.xcassets in Resources */,
 				561F50231C46B4BC00BD5AD2 /* Comic Book.otf in Resources */,
@@ -454,6 +494,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5609C1221C4FB99A00002BF8 /* NSDate+Legendary.m in Sources */,
 				56F683671C480E6400C0690D /* NSArray+Randomness.m in Sources */,
 				20B7D6511C4463680025BA20 /* Mastermind+CoreDataProperties.m in Sources */,
 				56F6835C1C47E37000C0690D /* GradientTopBar.m in Sources */,
@@ -465,6 +506,8 @@
 				56D2FFC91C3ECD66002DD3A2 /* Legendary_Jarvis.xcdatamodeld in Sources */,
 				20B7D6431C4463680025BA20 /* Hero+CoreDataProperties.m in Sources */,
 				20DFD7331C4C2FFC00DFC591 /* FilterCardsTableHeaderView.m in Sources */,
+				568EF7E31C4FB16F00B6A8EA /* ExpansionsViewController.m in Sources */,
+				568EF7DF1C4FAD2C00B6A8EA /* SettingsViewController.m in Sources */,
 				20B7D6451C4463680025BA20 /* CardSet+CoreDataProperties.m in Sources */,
 				20525F081C44F26A00393028 /* CardTypeDisplayViewController.m in Sources */,
 				20B7D64E1C4463680025BA20 /* Scheme.m in Sources */,
@@ -479,6 +522,7 @@
 				56D2FFBD1C3ECD66002DD3A2 /* main.m in Sources */,
 				20525F051C44F1A100393028 /* FilterCardsViewController.m in Sources */,
 				20525F021C44F16F00393028 /* NumberOfPlayersViewController.m in Sources */,
+				568EF7E71C4FB19400B6A8EA /* ExpansionTableViewCell.m in Sources */,
 				20525EFE1C44F04800393028 /* GameSetupViewController.m in Sources */,
 				20B7D6441C4463680025BA20 /* Hero.m in Sources */,
 				20B7D64D1C4463680025BA20 /* Scheme+CoreDataProperties.m in Sources */,

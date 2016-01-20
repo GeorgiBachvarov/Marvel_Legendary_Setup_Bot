@@ -83,7 +83,7 @@
 }
 
 - (void) settingsTapped{
-    [self performSegueWithIdentifier:@"NumberOfPlayersToFilterCardsSegue" sender:nil];
+    [self performSegueWithIdentifier:@"NumberOfPlayersToSettingsSegue" sender:nil];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{

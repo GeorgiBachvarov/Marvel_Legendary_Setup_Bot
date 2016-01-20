@@ -11,6 +11,8 @@
         <relationship name="alwaysLeadBy" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Mastermind" inverseName="alwaysLeads" inverseEntity="Mastermind" syncable="YES"/>
     </entity>
     <entity name="Expansion" representedClassName="Expansion" parentEntity="DisplayableEntity" syncable="YES">
+        <attribute name="isOwned" optional="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="releaseDate" optional="YES" attributeType="Date" syncable="YES"/>
         <relationship name="henchmanGroups" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="HenchmanGroup" inverseName="expansion" inverseEntity="HenchmanGroup" syncable="YES"/>
         <relationship name="heroes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Hero" inverseName="expansion" inverseEntity="Hero" syncable="YES"/>
         <relationship name="masterminds" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Mastermind" inverseName="expansion" inverseEntity="Mastermind" syncable="YES"/>
@@ -44,7 +46,7 @@
         <element name="CardSet" positionX="0" positionY="72" width="128" height="60"/>
         <element name="DisplayableEntity" positionX="-9" positionY="72" width="128" height="75"/>
         <element name="EnemyGroup" positionX="36" positionY="126" width="128" height="60"/>
-        <element name="Expansion" positionX="18" positionY="63" width="128" height="120"/>
+        <element name="Expansion" positionX="18" positionY="63" width="128" height="150"/>
         <element name="HenchmanGroup" positionX="-36" positionY="9" width="128" height="60"/>
         <element name="Hero" positionX="-18" positionY="27" width="128" height="60"/>
         <element name="Mastermind" positionX="-63" positionY="-18" width="128" height="75"/>

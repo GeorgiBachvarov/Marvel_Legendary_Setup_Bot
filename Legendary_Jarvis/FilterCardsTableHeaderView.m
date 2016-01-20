@@ -10,8 +10,6 @@
 
 @interface FilterCardsTableHeaderView ()
 
-@property (weak, nonatomic) IBOutlet UIButton *addButton;
-
 @end
 
 @implementation FilterCardsTableHeaderView

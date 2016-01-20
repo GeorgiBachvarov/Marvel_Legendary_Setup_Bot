@@ -28,6 +28,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"Bans";
     [self.tableView registerNib:[UINib nibWithNibName:@"FilteredCardTableViewCell" bundle:nil] forCellReuseIdentifier:@"FilteredCardTableViewCell"];
     [self.tableView registerClass:[UITableViewHeaderFooterView class] forHeaderFooterViewReuseIdentifier:@"HeaderView"];
 }

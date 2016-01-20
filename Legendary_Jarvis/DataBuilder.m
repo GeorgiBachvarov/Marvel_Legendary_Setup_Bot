@@ -4,11 +4,10 @@
 //
 //  Created by Georgi Bachvarov on 1/11/16.
 //  Copyright © 2016 Georgi Bachvarov. All rights reserved.
-// https://boardgamegeek.com/thread/1200976/golden-solo-ruleset-variant-reviews-final-legendar
 
 #import "DataBuilder.h"
 #import "DataManager.h"
-
+#import "NSDate+Legendary.h"
 @implementation DataBuilder
 
 + (void)buildLegendaryData{
@@ -24,6 +23,7 @@
     
     //init all data
     Expansion *basicSet = [[Expansion alloc] initWithDisplayName:@"Basic Set"];
+    [basicSet setReleaseDate:[[NSDate alloc] initWithYear:2012 month:11 day:13]];
     
     Scheme *scheme1_1 = [[Scheme alloc] initWithDisplayName:@"The Legacy Virus" insertIntoExpansion:basicSet];
     Scheme *scheme1_2 = [[Scheme alloc] initWithDisplayName:@"Midtown Bank Robbery" insertIntoExpansion:basicSet];
@@ -94,6 +94,7 @@
     
     //init all data
     Expansion *darkCity = [[Expansion alloc] initWithDisplayName:@"Dark City"];
+    [darkCity setReleaseDate:[[NSDate alloc] initWithYear:2013 month:6 day:19]];
     
     Scheme *scheme2_1 = [[Scheme alloc] initWithDisplayName:@"Capture Baby Hope" insertIntoExpansion:darkCity];
     Scheme *scheme2_2 = [[Scheme alloc] initWithDisplayName:@"Detonate the Helicarrier" insertIntoExpansion:darkCity];
@@ -173,7 +174,8 @@
 #pragma mark Secret Wars Vol 1
     
     //init all data
-    Expansion *secretWarsVol1 = [[Expansion alloc] initWithDisplayName:@"Expansion"];
+    Expansion *secretWarsVol1 = [[Expansion alloc] initWithDisplayName:@"Secret Wars Vol 1"];
+    [secretWarsVol1 setReleaseDate:[[NSDate alloc] initWithYear:2015 month:8 day:5]];
     
     Scheme *scheme3_1 = [[Scheme alloc] initWithDisplayName:@"Fragmented Realities" insertIntoExpansion:secretWarsVol1];
     Scheme *scheme3_2 = [[Scheme alloc] initWithDisplayName:@"Crush Them With My Bare Hands" insertIntoExpansion:secretWarsVol1];

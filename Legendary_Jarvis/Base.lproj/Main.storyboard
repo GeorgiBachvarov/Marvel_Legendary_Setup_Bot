@@ -8,12 +8,19 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <customFonts key="customFonts">
+        <mutableArray key="Comic Book Bold Italic.otf">
+            <string>ComicBook-BoldItalic</string>
+            <string>ComicBook-BoldItalic</string>
+        </mutableArray>
         <mutableArray key="Comic Book Bold.otf">
             <string>ComicBook-Bold</string>
             <string>ComicBook-Bold</string>
             <string>ComicBook-Bold</string>
             <string>ComicBook-Bold</string>
             <string>ComicBook-Bold</string>
+        </mutableArray>
+        <mutableArray key="Comic Book Italic.otf">
+            <string>ComicBook-Italic</string>
         </mutableArray>
         <mutableArray key="Comic Book.otf">
             <string>ComicBook</string>
@@ -50,28 +57,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2F-vu-dEC">
-                                <rect key="frame" x="157.5" y="134" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="M2F-vu-dEC" secondAttribute="height" id="eh0-cU-LPE"/>
-                                    <constraint firstAttribute="height" constant="100" id="uIN-Rz-Z2y"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="ComicBook-Bold" family="Comic Book" pointSize="64"/>
-                                <state key="normal" title="1">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="onePlayerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bFI-y9-gBl"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="helicarrier" translatesAutoresizingMaskIntoConstraints="NO" id="TfM-G1-Cf2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaQ-Rv-aI0">
-                                <rect key="frame" x="0.0" y="234" width="100" height="100"/>
+                                <rect key="frame" x="20" y="184" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="OgO-sc-Vdh"/>
                                     <constraint firstAttribute="width" secondItem="kaQ-Rv-aI0" secondAttribute="height" id="ooO-6T-yY0"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="ComicBook-Bold" family="Comic Book" pointSize="64"/>
-                                <state key="normal" title="2">
+                                <fontDescription key="fontDescription" name="ComicBook-Bold" family="Comic Book" pointSize="45"/>
+                                <state key="normal" title="2" backgroundImage="comicBookBubble_normal_left">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -79,13 +75,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ran-q3-5Y1">
-                                <rect key="frame" x="314" y="234" width="100" height="100"/>
+                                <rect key="frame" x="244" y="204" width="120" height="120"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="49T-D7-rD9"/>
+                                    <constraint firstAttribute="height" constant="120" id="49T-D7-rD9"/>
                                     <constraint firstAttribute="width" secondItem="ran-q3-5Y1" secondAttribute="height" id="tPg-Gn-pX4"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ComicBook-Bold" family="Comic Book" pointSize="64"/>
-                                <state key="normal" title="3">
+                                <state key="normal" title="3" backgroundImage="comicBookBubble_normal_right">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -93,13 +89,13 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pBl-3c-LbM">
-                                <rect key="frame" x="50" y="354" width="100" height="100"/>
+                                <rect key="frame" x="20" y="304" width="140" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="pBl-3c-LbM" secondAttribute="height" id="ejy-vx-7Fm"/>
-                                    <constraint firstAttribute="height" constant="100" id="m2L-ba-OCn"/>
+                                    <constraint firstAttribute="height" constant="140" id="m2L-ba-OCn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ComicBook-Bold" family="Comic Book" pointSize="64"/>
-                                <state key="normal" title="4">
+                                <state key="normal" title="4" backgroundImage="comicBookBubble_normal_left">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -107,17 +103,31 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yfs-3w-HsN">
-                                <rect key="frame" x="264" y="354" width="100" height="100"/>
+                                <rect key="frame" x="234" y="374" width="160" height="160"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="3ek-lg-UYv"/>
+                                    <constraint firstAttribute="height" constant="160" id="3ek-lg-UYv"/>
                                     <constraint firstAttribute="width" secondItem="Yfs-3w-HsN" secondAttribute="height" id="WOf-zQ-0x8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="ComicBook-Bold" family="Comic Book" pointSize="64"/>
-                                <state key="normal" title="5">
+                                <state key="normal" title="5" backgroundImage="comicBookBubble_normal_right">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="fivePlayerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="936-Jm-NgJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2F-vu-dEC">
+                                <rect key="frame" x="167" y="104" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="M2F-vu-dEC" secondAttribute="height" id="eh0-cU-LPE"/>
+                                    <constraint firstAttribute="height" constant="80" id="uIN-Rz-Z2y"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ComicBook-Bold" family="Comic Book" pointSize="40"/>
+                                <state key="normal" title="1" backgroundImage="comicBookBubble_normal_left">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onePlayerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bFI-y9-gBl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -126,20 +136,24 @@
                             <constraint firstItem="Yfs-3w-HsN" firstAttribute="width" secondItem="Yfs-3w-HsN" secondAttribute="height" id="2rj-JV-ZMs"/>
                             <constraint firstItem="M2F-vu-dEC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2vV-ly-DZn"/>
                             <constraint firstItem="ran-q3-5Y1" firstAttribute="width" secondItem="ran-q3-5Y1" secondAttribute="height" id="4Bz-Mn-f4G"/>
-                            <constraint firstItem="Yfs-3w-HsN" firstAttribute="centerY" secondItem="pBl-3c-LbM" secondAttribute="centerY" id="4eo-eG-OAC"/>
+                            <constraint firstItem="TfM-G1-Cf2" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="7p2-Yf-Yn8"/>
                             <constraint firstItem="pBl-3c-LbM" firstAttribute="width" secondItem="pBl-3c-LbM" secondAttribute="height" id="7w1-18-9kJ"/>
-                            <constraint firstItem="kaQ-Rv-aI0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="8BB-Bm-oSE"/>
+                            <constraint firstItem="kaQ-Rv-aI0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8BB-Bm-oSE"/>
+                            <constraint firstItem="TfM-G1-Cf2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DwJ-Au-9F1"/>
+                            <constraint firstItem="TfM-G1-Cf2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EfT-ly-uRf"/>
                             <constraint firstItem="kaQ-Rv-aI0" firstAttribute="top" secondItem="M2F-vu-dEC" secondAttribute="bottom" id="OgL-6B-hA3"/>
-                            <constraint firstItem="ran-q3-5Y1" firstAttribute="centerY" secondItem="kaQ-Rv-aI0" secondAttribute="centerY" id="QyD-Bl-Wxh"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ran-q3-5Y1" secondAttribute="trailing" constant="-20" id="VAt-ww-ysa"/>
+                            <constraint firstItem="ran-q3-5Y1" firstAttribute="top" secondItem="M2F-vu-dEC" secondAttribute="bottom" constant="20" id="Q9w-zy-Ypc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ran-q3-5Y1" secondAttribute="trailing" constant="30" id="VAt-ww-ysa"/>
                             <constraint firstItem="ran-q3-5Y1" firstAttribute="width" secondItem="ran-q3-5Y1" secondAttribute="height" id="VnT-F5-cYM"/>
                             <constraint firstItem="kaQ-Rv-aI0" firstAttribute="width" secondItem="kaQ-Rv-aI0" secondAttribute="height" id="aqJ-6I-UaD"/>
                             <constraint firstItem="Yfs-3w-HsN" firstAttribute="width" secondItem="Yfs-3w-HsN" secondAttribute="height" id="cAL-So-bt5"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Yfs-3w-HsN" secondAttribute="trailing" constant="30" id="hs2-ee-PMZ"/>
+                            <constraint firstItem="Yfs-3w-HsN" firstAttribute="top" secondItem="ran-q3-5Y1" secondAttribute="bottom" constant="50" id="dbb-dU-8tV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Yfs-3w-HsN" secondAttribute="trailing" id="hs2-ee-PMZ"/>
                             <constraint firstItem="pBl-3c-LbM" firstAttribute="width" secondItem="pBl-3c-LbM" secondAttribute="height" id="qSL-V5-4Bn"/>
-                            <constraint firstItem="M2F-vu-dEC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="rAn-0O-J0O"/>
+                            <constraint firstItem="M2F-vu-dEC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="rAn-0O-J0O"/>
                             <constraint firstItem="Yfs-3w-HsN" firstAttribute="width" secondItem="Yfs-3w-HsN" secondAttribute="height" id="tOX-eb-Bqg"/>
-                            <constraint firstItem="pBl-3c-LbM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="vty-EF-dOr"/>
+                            <constraint firstItem="pBl-3c-LbM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vty-EF-dOr"/>
+                            <constraint firstItem="TfM-G1-Cf2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="yy9-O0-ROR"/>
                             <constraint firstItem="pBl-3c-LbM" firstAttribute="top" secondItem="kaQ-Rv-aI0" secondAttribute="bottom" constant="20" id="ze2-db-edi"/>
                         </constraints>
                     </view>
@@ -152,12 +166,78 @@
                         <outletCollection property="buttons" destination="pBl-3c-LbM" id="Y5L-rN-ZG8"/>
                         <outletCollection property="buttons" destination="Yfs-3w-HsN" id="8M7-NL-j3G"/>
                         <segue destination="WL5-bt-swm" kind="presentation" identifier="NumberOfPlayersToGameSetupViewController" id="4Sp-9C-FgY"/>
-                        <segue destination="AxV-y3-ZUZ" kind="show" identifier="NumberOfPlayersToFilterCardsSegue" id="ZZL-qV-wii"/>
+                        <segue destination="BGm-ZY-vGx" kind="show" identifier="NumberOfPlayersToSettingsSegue" id="2mB-1V-0vH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="275" y="420"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="PJe-GI-6PJ">
+            <objects>
+                <viewController id="BGm-ZY-vGx" customClass="SettingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YG3-cX-alL"/>
+                        <viewControllerLayoutGuide type="bottom" id="iI1-dJ-bdq"/>
+                    </layoutGuides>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="4Dj-GC-6Hl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="helicarrier" translatesAutoresizingMaskIntoConstraints="NO" id="ctk-Dw-7nE">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJq-jT-Fzk">
+                                <rect key="frame" x="-278" y="118" width="270" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="4NL-PV-kAE"/>
+                                    <constraint firstAttribute="width" constant="270" id="tTz-IE-rCs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ComicBook-BoldItalic" family="Comic Book" pointSize="15"/>
+                                <state key="normal" title="Ban Cards!" backgroundImage="comicBookBubble_normal_left">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="banCardsTapped:" destination="BGm-ZY-vGx" eventType="touchUpInside" id="wi3-bM-eQr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gC5-ac-8fA">
+                                <rect key="frame" x="422" y="293" width="270" height="150"/>
+                                <fontDescription key="fontDescription" name="ComicBook-BoldItalic" family="Comic Book" pointSize="15"/>
+                                <state key="normal" title="Owned Expansions" backgroundImage="comicBookBubble_normal_right">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="expansionsTapped:" destination="BGm-ZY-vGx" eventType="touchUpInside" id="FOp-So-l8o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gC5-ac-8fA" firstAttribute="top" secondItem="AJq-jT-Fzk" secondAttribute="bottom" constant="25" id="3mP-dl-e1b"/>
+                            <constraint firstItem="ctk-Dw-7nE" firstAttribute="width" secondItem="4Dj-GC-6Hl" secondAttribute="width" id="LWK-fT-SEB"/>
+                            <constraint firstItem="gC5-ac-8fA" firstAttribute="width" secondItem="AJq-jT-Fzk" secondAttribute="width" id="QhP-3q-8t4"/>
+                            <constraint firstItem="gC5-ac-8fA" firstAttribute="centerX" secondItem="4Dj-GC-6Hl" secondAttribute="centerX" constant="350" id="kbx-t8-RPj"/>
+                            <constraint firstItem="AJq-jT-Fzk" firstAttribute="top" secondItem="YG3-cX-alL" secondAttribute="bottom" constant="54" id="nvS-Tm-0uc"/>
+                            <constraint firstItem="ctk-Dw-7nE" firstAttribute="height" secondItem="4Dj-GC-6Hl" secondAttribute="height" id="szQ-yN-s9o"/>
+                            <constraint firstItem="ctk-Dw-7nE" firstAttribute="centerX" secondItem="4Dj-GC-6Hl" secondAttribute="centerX" id="uLX-2N-JzR"/>
+                            <constraint firstItem="gC5-ac-8fA" firstAttribute="height" secondItem="AJq-jT-Fzk" secondAttribute="height" id="v1y-Jx-YaN"/>
+                            <constraint firstItem="AJq-jT-Fzk" firstAttribute="centerX" secondItem="4Dj-GC-6Hl" secondAttribute="centerX" constant="-350" id="wKa-zf-NTr"/>
+                            <constraint firstItem="ctk-Dw-7nE" firstAttribute="centerY" secondItem="4Dj-GC-6Hl" secondAttribute="centerY" id="ya6-ZD-0s7"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="banCardsButtonCenterXConstraint" destination="wKa-zf-NTr" id="fQg-ta-sA4"/>
+                        <outlet property="ownedExpansionsCenterXConstraint" destination="kbx-t8-RPj" id="jkv-MW-rkt"/>
+                        <segue destination="AxV-y3-ZUZ" kind="show" identifier="SettingsToFilterCardsSegue" id="E6q-6G-FU1"/>
+                        <segue destination="XtL-qv-xyH" kind="show" identifier="SettingsToExpansionsSegue" id="f7R-il-aNY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3oV-PP-Rrn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="275" y="1337"/>
         </scene>
         <!--Game Setup View Controller-->
         <scene sceneID="xqo-V7-lFC">
@@ -210,7 +290,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="157"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secret Invasion of The Skrull Shapeshifters" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6i-gr-ehh">
-                                                                <rect key="frame" x="42" y="40" width="329.5" height="57"/>
+                                                                <rect key="frame" x="42" y="40" width="330" height="57"/>
                                                                 <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="25"/>
                                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -357,6 +437,54 @@
             </objects>
             <point key="canvasLocation" x="845" y="420"/>
         </scene>
+        <!--Expansions View Controller-->
+        <scene sceneID="Kp6-Od-pqI">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="XtL-qv-xyH" customClass="ExpansionsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4z5-fd-1k2"/>
+                        <viewControllerLayoutGuide type="bottom" id="zl3-i5-pj6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fVU-dv-Cx8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LYF-Bo-ekh">
+                                <rect key="frame" x="0.0" y="144" width="414" height="592"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="XtL-qv-xyH" id="93b-K2-nhw"/>
+                                    <outlet property="delegate" destination="XtL-qv-xyH" id="LzR-kx-IMa"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nk1-gR-08s">
+                                <rect key="frame" x="70" y="85" width="274" height="39"/>
+                                <string key="text">Select which expansions you own
+from the list below!</string>
+                                <fontDescription key="fontDescription" name="ComicBook-Italic" family="Comic Book" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nk1-gR-08s" firstAttribute="centerX" secondItem="fVU-dv-Cx8" secondAttribute="centerX" id="0xh-62-bNe"/>
+                            <constraint firstItem="LYF-Bo-ekh" firstAttribute="top" secondItem="Nk1-gR-08s" secondAttribute="bottom" constant="20" id="79f-ay-fL9"/>
+                            <constraint firstItem="LYF-Bo-ekh" firstAttribute="width" secondItem="fVU-dv-Cx8" secondAttribute="width" id="cbo-mI-dVU"/>
+                            <constraint firstItem="zl3-i5-pj6" firstAttribute="top" secondItem="LYF-Bo-ekh" secondAttribute="bottom" id="hbl-hc-o8i"/>
+                            <constraint firstItem="Nk1-gR-08s" firstAttribute="top" secondItem="4z5-fd-1k2" secondAttribute="bottom" constant="21" id="zIg-7q-h5y"/>
+                            <constraint firstItem="LYF-Bo-ekh" firstAttribute="centerX" secondItem="fVU-dv-Cx8" secondAttribute="centerX" id="zcO-EQ-ZJ5"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="tableView" destination="LYF-Bo-ekh" id="Ye6-ao-Ue4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ilx-0W-6Ac" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-240" y="2270"/>
+        </scene>
         <!--Filter Cards View Controller-->
         <scene sceneID="ydY-de-I4Q">
             <objects>
@@ -394,7 +522,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pCU-0i-KxX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="275" y="1286"/>
+            <point key="canvasLocation" x="275" y="2270"/>
         </scene>
         <!--Card Type Display View Controller-->
         <scene sceneID="jYZ-Up-E1C">
@@ -432,12 +560,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oi4-3y-OtT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="845" y="1286"/>
+            <point key="canvasLocation" x="275" y="3134"/>
         </scene>
     </scenes>
     <resources>
         <image name="Dr. Doom" width="128" height="128"/>
         <image name="background" width="439" height="262"/>
+        <image name="comicBookBubble_normal_left" width="170" height="170"/>
+        <image name="comicBookBubble_normal_right" width="170" height="170"/>
         <image name="cross" width="320" height="217"/>
+        <image name="helicarrier" width="252" height="358"/>
     </resources>
 </document>

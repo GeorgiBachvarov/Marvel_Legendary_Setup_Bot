@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Comic Book.otf">
+            <string>ComicBook</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="82" id="KGk-i7-Jjw" customClass="ExpansionTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="338" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="338" height="81"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secret Wars Vol 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kki-K6-848">
+                        <rect key="frame" x="16" y="30" width="160" height="22"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="ComicBook" family="Comic Book" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j7s-0u-dmx">
+                        <rect key="frame" x="266" y="25" width="51" height="31"/>
+                        <connections>
+                            <action selector="isOwnedSwitchValueChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="5u4-a5-dNU"/>
+                        </connections>
+                    </switch>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="Kki-K6-848" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="E30-rk-dNv"/>
+                    <constraint firstItem="j7s-0u-dmx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Kki-K6-848" secondAttribute="trailing" constant="10" id="Eaj-Lt-M8Y"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="j7s-0u-dmx" secondAttribute="trailing" constant="15" id="Ssi-wU-a9m"/>
+                    <constraint firstItem="j7s-0u-dmx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ZD0-nB-gFT"/>
+                    <constraint firstItem="Kki-K6-848" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cCr-rg-bHX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="expansionTitleLabel" destination="Kki-K6-848" id="hbq-pw-YMf"/>
+                <outlet property="isOwnedSwitch" destination="j7s-0u-dmx" id="RZX-6G-UNl"/>
+            </connections>
+            <point key="canvasLocation" x="296" y="339"/>
+        </tableViewCell>
+    </objects>
+</document>

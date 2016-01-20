@@ -45,4 +45,6 @@
 - (NSArray *) fetchAllBannedHeroes;
 - (NSArray *) fetchAllBannedEnemyGroups;
 
+- (NSArray *) fetchAllExpansions;
+
 @end

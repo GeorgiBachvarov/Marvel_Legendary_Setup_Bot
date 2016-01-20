@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Expansion (CoreDataProperties)
 
+@property (nullable, nonatomic, retain) NSNumber *isOwned;
+@property (nullable, nonatomic, retain) NSDate *releaseDate;
 @property (nullable, nonatomic, retain) NSSet<HenchmanGroup *> *henchmanGroups;
 @property (nullable, nonatomic, retain) NSSet<Hero *> *heroes;
 @property (nullable, nonatomic, retain) NSSet<Mastermind *> *masterminds;

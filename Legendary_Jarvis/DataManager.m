@@ -87,30 +87,40 @@
 
 - (NSArray *)fetchAllSchemes{
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Scheme"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"expansion.isOwned == YES"];
+    [fetchRequest setPredicate:predicate];
     NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
     return result;
 }
 
 - (NSArray *)fetchAllMasterminds{
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Mastermind"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"expansion.isOwned == YES"];
+    [fetchRequest setPredicate:predicate];
     NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
     return result;
 }
 
 - (NSArray *)fetchAllVillainGroups{
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"VillainGroup"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"expansion.isOwned == YES"];
+    [fetchRequest setPredicate:predicate];
     NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
     return result;
 }
 
 - (NSArray *)fetchAllHenchmanGroups{
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"HenchmanGroup"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"expansion.isOwned == YES"];
+    [fetchRequest setPredicate:predicate];
     NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
     return result;
 }
 
 - (NSArray *)fetchAllHeroes{
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Hero"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"expansion.isOwned == YES"];
+    [fetchRequest setPredicate:predicate];
     NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
     return result;
 }
@@ -118,13 +128,14 @@
 - (NSArray *)fetchAllEnemyGroups{
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"EnemyGroup"];
     NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
+    result = [result filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"expansion.isOwned == YES"]];
     return result;
 
 }
 
 - (NSArray *) fetchAllNotBannedSchemes{
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Scheme"];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isVetoed == NO"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isVetoed == NO AND expansion.isOwned == YES"];
     [fetchRequest setPredicate:predicate];
     NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
     return result;
@@ -132,7 +143,7 @@
 
 - (NSArray *) fetchAllNotBannedMasterminds{
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Mastermind"];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isVetoed == NO"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isVetoed == NO AND expansion.isOwned == YES"];
     [fetchRequest setPredicate:predicate];
     NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
     return result;
@@ -140,7 +151,7 @@
 
 - (NSArray *) fetchAllNotBannedVillainGroups{
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"VillainGroup"];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isVetoed == NO"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isVetoed == NO AND expansion.isOwned == YES"];
     [fetchRequest setPredicate:predicate];
     NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
     return result;
@@ -148,7 +159,7 @@
 
 - (NSArray *) fetchAllNotBannedHenchmanGroups{
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"HenchmanGroup"];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isVetoed == NO"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isVetoed == NO AND expansion.isOwned == YES"];
     [fetchRequest setPredicate:predicate];
     NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
     return result;
@@ -156,7 +167,7 @@
 
 - (NSArray *) fetchAllNotBannedHeroes{
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Hero"];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isVetoed == NO"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isVetoed == NO AND expansion.isOwned == YES"];
     [fetchRequest setPredicate:predicate];
     NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
     return result;
@@ -167,13 +178,14 @@
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isVetoed == NO"];
     [fetchRequest setPredicate:predicate];
     NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
+    result = [result filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"expansion.isOwned == YES"]];
     return result;
 }
 
 
 - (NSArray *) fetchAllBannedSchemes{
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Scheme"];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isVetoed == YES"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isVetoed == YES AND expansion.isOwned == YES"];
     [fetchRequest setPredicate:predicate];
     NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
     return result;
@@ -189,7 +201,7 @@
 
 - (NSArray *) fetchAllBannedVillainGroups{
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"VillainGroup"];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isVetoed == YES"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isVetoed == YES AND expansion.isOwned == YES"];
     [fetchRequest setPredicate:predicate];
     NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
     return result;
@@ -197,7 +209,7 @@
 
 - (NSArray *) fetchAllBannedHenchmanGroups{
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"HenchmanGroup"];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isVetoed == YES"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isVetoed == YES AND expansion.isOwned == YES"];
     [fetchRequest setPredicate:predicate];
     NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
     return result;
@@ -205,7 +217,7 @@
 
 - (NSArray *) fetchAllBannedHeroes{
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Hero"];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isVetoed == YES"];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isVetoed == YES AND expansion.isOwned == YES"];
     [fetchRequest setPredicate:predicate];
     NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
     return result;
@@ -216,9 +228,17 @@
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isVetoed == YES"];
     [fetchRequest setPredicate:predicate];
     NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
+    result = [result filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"expansion.isOwned == YES"]];
     return result;
 }
 
+- (NSArray *)fetchAllExpansions{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Expansion"];
+    NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"releaseDate" ascending:YES];
+    [fetchRequest setSortDescriptors:@[sortDescriptor]];
+    NSArray *result = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
+    return result;
+}
 
 
 @end
