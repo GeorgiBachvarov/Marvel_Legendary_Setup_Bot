@@ -165,7 +165,7 @@
                         <outletCollection property="buttons" destination="ran-q3-5Y1" id="ypx-L4-Hai"/>
                         <outletCollection property="buttons" destination="pBl-3c-LbM" id="Y5L-rN-ZG8"/>
                         <outletCollection property="buttons" destination="Yfs-3w-HsN" id="8M7-NL-j3G"/>
-                        <segue destination="WL5-bt-swm" kind="presentation" identifier="NumberOfPlayersToGameSetupViewController" id="4Sp-9C-FgY"/>
+                        <segue destination="WL5-bt-swm" kind="presentation" identifier="NumberOfPlayersToGameSetupViewController" modalTransitionStyle="partialCurl" id="4Sp-9C-FgY"/>
                         <segue destination="BGm-ZY-vGx" kind="show" identifier="NumberOfPlayersToSettingsSegue" id="2mB-1V-0vH"/>
                     </connections>
                 </viewController>
