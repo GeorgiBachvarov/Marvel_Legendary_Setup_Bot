@@ -243,18 +243,145 @@
     rule3_4.objectCount = @(1);
     [scheme3_1 addRulesObject:rule3_4];
     
+    return;
+#pragma mark Fantastic Four
     
+    //init all data
+    Expansion *fantasticFour = [[Expansion alloc] initWithDisplayName:@"Fantastic Four"];
+    [fantasticFour setReleaseDate:[[NSDate alloc] initWithYear:2013 month:10 day:15]];
     
+    Scheme *scheme4_1 = [[Scheme alloc] initWithDisplayName:@"Bathe Earth in Cosmic Rays" insertIntoExpansion:fantasticFour];
+    Scheme *scheme4_2 = [[Scheme alloc] initWithDisplayName:@"Flood the Planet with Melted Glaciers" insertIntoExpansion:fantasticFour];
+    Scheme *scheme4_3 = [[Scheme alloc] initWithDisplayName:@"Invincible Force Field" insertIntoExpansion:fantasticFour];
+    Scheme *scheme4_4 = [[Scheme alloc] initWithDisplayName:@"Pull Reality into the Negative Zone" insertIntoExpansion:fantasticFour];
     
-#pragma mark Secret Wars Vol 2
+    Mastermind *mastermind4_1 = [[Mastermind alloc] initWithDisplayName:@"Galactus" insertIntoExpansion:fantasticFour];
+    Mastermind *mastermind4_2 = [[Mastermind alloc] initWithDisplayName:@"Mole Man" insertIntoExpansion:fantasticFour];
+    
+    VillainGroup *villainGroup4_1 = [[VillainGroup alloc] initWithDisplayName:@"Subterranea" insertIntoExpansion:fantasticFour];
+    VillainGroup *villainGroup4_2 = [[VillainGroup alloc] initWithDisplayName:@"Heralds of Galactus" insertIntoExpansion:fantasticFour];
+    
+    Hero *hero4_1 = [[Hero alloc] initWithDisplayName:@"Mr. Fantastic" insertIntoExpansion:fantasticFour];
+    Hero *hero4_2 = [[Hero alloc] initWithDisplayName:@"Invisible Woman" insertIntoExpansion:fantasticFour];
+    Hero *hero4_3 = [[Hero alloc] initWithDisplayName:@"Thing" insertIntoExpansion:fantasticFour];
+    Hero *hero4_4 = [[Hero alloc] initWithDisplayName:@"Human Torch" insertIntoExpansion:fantasticFour];
+    Hero *hero4_5 = [[Hero alloc] initWithDisplayName:@"Silver Surfer" insertIntoExpansion:fantasticFour];
+    
+    //make necessary connections
+    //TODO
+    [mastermind4_1 addAlwaysLeadsObject:villainGroup4_2];
+    [mastermind4_2 addAlwaysLeadsObject:villainGroup4_1];
     
 #pragma mark Paint the Town Red
     
-#pragma mark Villains
-
+    //init all data
+    Expansion *paintTheTownRed = [[Expansion alloc] initWithDisplayName:@"Paint the Town Red"];
+    [paintTheTownRed setReleaseDate:[[NSDate alloc] initWithYear:2014 month:3 day:12]];
+    
+    Scheme *scheme5_1 = [[Scheme alloc] initWithDisplayName:@"Invade the Daily Bugle News HQ" insertIntoExpansion:paintTheTownRed];
+    Scheme *scheme5_2 = [[Scheme alloc] initWithDisplayName:@"Splice Humans with Spider DNA" insertIntoExpansion:paintTheTownRed];
+    Scheme *scheme5_3 = [[Scheme alloc] initWithDisplayName:@"The Clone Saga" insertIntoExpansion:paintTheTownRed];
+    Scheme *scheme5_4 = [[Scheme alloc] initWithDisplayName:@"Weave a Web of Lies" insertIntoExpansion:paintTheTownRed];
+    
+    Mastermind *mastermind5_1 = [[Mastermind alloc] initWithDisplayName:@"Carnage" insertIntoExpansion:paintTheTownRed];
+    Mastermind *mastermind5_2 = [[Mastermind alloc] initWithDisplayName:@"Mysterio" insertIntoExpansion:paintTheTownRed];
+    
+    VillainGroup *villainGroup5_1 = [[VillainGroup alloc] initWithDisplayName:@"Maximum Carnage" insertIntoExpansion:paintTheTownRed];
+    VillainGroup *villainGroup5_2 = [[VillainGroup alloc] initWithDisplayName:@"Sinister Six" insertIntoExpansion:paintTheTownRed];
+    
+    Hero *hero5_1 = [[Hero alloc] initWithDisplayName:@"Black Cat" insertIntoExpansion:paintTheTownRed];
+    Hero *hero5_2 = [[Hero alloc] initWithDisplayName:@"Moon Knight" insertIntoExpansion:paintTheTownRed];
+    Hero *hero5_3 = [[Hero alloc] initWithDisplayName:@"Scarlet Spider" insertIntoExpansion:paintTheTownRed];
+    Hero *hero5_4 = [[Hero alloc] initWithDisplayName:@"Spider-Woman" insertIntoExpansion:paintTheTownRed];
+    Hero *hero5_5 = [[Hero alloc] initWithDisplayName:@"Symbiote Spider-Man" insertIntoExpansion:paintTheTownRed];
+    
+    //make necessary connections
+    //TODO
+    [mastermind5_1 addAlwaysLeadsObject:villainGroup5_1];
+    [mastermind5_2 addAlwaysLeadsObject:villainGroup5_2];
+    
+#pragma mark Secret Wars Vol 2
+    
+    //init all data
+    Expansion *secretWarsVol2 = [[Expansion alloc] initWithDisplayName:@"Secret Wars Vol 2"];
+    [secretWarsVol2 setReleaseDate:[[NSDate alloc] initWithYear:2015 month:12 day:9]];
+    
+    Scheme *scheme6_1 = [[Scheme alloc] initWithDisplayName:@"Sinister Ambitions" insertIntoExpansion:secretWarsVol2];
+    Scheme *scheme6_2 = [[Scheme alloc] initWithDisplayName:@"Deadlands Hordes Charge the Wall" insertIntoExpansion:secretWarsVol2];
+    Scheme *scheme6_3 = [[Scheme alloc] initWithDisplayName:@"Enthrone the Barons of Battleworld" insertIntoExpansion:secretWarsVol2];
+    Scheme *scheme6_4 = [[Scheme alloc] initWithDisplayName:@"Master the Mysteries of Kung-Fu" insertIntoExpansion:secretWarsVol2];
+    Scheme *scheme6_5 = [[Scheme alloc] initWithDisplayName:@"Secret Wars" insertIntoExpansion:secretWarsVol2];
+    Scheme *scheme6_6 = [[Scheme alloc] initWithDisplayName:@"The Fountain of Enternal Life" insertIntoExpansion:secretWarsVol2];
+    Scheme *scheme6_7 = [[Scheme alloc] initWithDisplayName:@"The God-Emperor of Battleworld" insertIntoExpansion:secretWarsVol2];
+    Scheme *scheme6_8 = [[Scheme alloc] initWithDisplayName:@"The Mark of Khonshu" insertIntoExpansion:secretWarsVol2];
+    
+    Mastermind *mastermind6_1 = [[Mastermind alloc] initWithDisplayName:@"King Hyperion" insertIntoExpansion:secretWarsVol2];
+    Mastermind *mastermind6_2 = [[Mastermind alloc] initWithDisplayName:@"Spider Queen" insertIntoExpansion:secretWarsVol2];
+    Mastermind *mastermind6_3 = [[Mastermind alloc] initWithDisplayName:@"Shiklah, the Demon Bride" insertIntoExpansion:secretWarsVol2];
+    Mastermind *mastermind6_4 = [[Mastermind alloc] initWithDisplayName:@"Immortal Emperor Zheng-Zhu" insertIntoExpansion:secretWarsVol2];
+    
+    VillainGroup *villainGroup6_1 = [[VillainGroup alloc] initWithDisplayName:@"Utopolis" insertIntoExpansion:secretWarsVol2];
+    VillainGroup *villainGroup6_2 = [[VillainGroup alloc] initWithDisplayName:@"Guardians of Knowhere" insertIntoExpansion:secretWarsVol2];
+    VillainGroup *villainGroup6_3 = [[VillainGroup alloc] initWithDisplayName:@"Deadpool's Secret Secret Wars" insertIntoExpansion:secretWarsVol2];
+    VillainGroup *villainGroup6_4 = [[VillainGroup alloc] initWithDisplayName:@"X-Men 92" insertIntoExpansion:secretWarsVol2];
+    VillainGroup *villainGroup6_5 = [[VillainGroup alloc] initWithDisplayName:@"K'un Lun" insertIntoExpansion:secretWarsVol2];
+    VillainGroup *villainGroup6_6 = [[VillainGroup alloc] initWithDisplayName:@"Monster Metropolis" insertIntoExpansion:secretWarsVol2];
+    
+    HenchmanGroup *henchmanGroup6_1 = [[HenchmanGroup alloc] initWithDisplayName:@"Magma Men" insertIntoExpansion:secretWarsVol2];
+    HenchmanGroup *henchmanGroup6_2 = [[HenchmanGroup alloc] initWithDisplayName:@"Spider-Infected" insertIntoExpansion:secretWarsVol2];
+    HenchmanGroup *henchmanGroup6_3 = [[HenchmanGroup alloc] initWithDisplayName:@"Khonshu Guardians" insertIntoExpansion:secretWarsVol2];
+    
+    Hero *hero6_1 = [[Hero alloc] initWithDisplayName:@"Beast" insertIntoExpansion:secretWarsVol2];
+    Hero *hero6_2 = [[Hero alloc] initWithDisplayName:@"Captain Britain" insertIntoExpansion:secretWarsVol2];
+    Hero *hero6_3 = [[Hero alloc] initWithDisplayName:@"Corvus Glaive" insertIntoExpansion:secretWarsVol2];
+    Hero *hero6_4 = [[Hero alloc] initWithDisplayName:@"Black Swan" insertIntoExpansion:secretWarsVol2];
+    Hero *hero6_5 = [[Hero alloc] initWithDisplayName:@"Ruby Summers" insertIntoExpansion:secretWarsVol2];
+    Hero *hero6_6 = [[Hero alloc] initWithDisplayName:@"Time-Traveling Jean Grey" insertIntoExpansion:secretWarsVol2];
+    Hero *hero6_7 = [[Hero alloc] initWithDisplayName:@"Phoenix Force Cyclops" insertIntoExpansion:secretWarsVol2];
+    Hero *hero6_8 = [[Hero alloc] initWithDisplayName:@"Soulsword Colossus" insertIntoExpansion:secretWarsVol2];
+    Hero *hero6_9 = [[Hero alloc] initWithDisplayName:@"Silk" insertIntoExpansion:secretWarsVol2];
+    Hero *hero6_10 = [[Hero alloc] initWithDisplayName:@"Agent Venom" insertIntoExpansion:secretWarsVol2];
+    Hero *hero6_11 = [[Hero alloc] initWithDisplayName:@"Spider-Gwen" insertIntoExpansion:secretWarsVol2];
+    Hero *hero6_12 = [[Hero alloc] initWithDisplayName:@"Shang-Chi" insertIntoExpansion:secretWarsVol2];
+    Hero *hero6_13 = [[Hero alloc] initWithDisplayName:@"Dr Punisher, Soldier Supreme" insertIntoExpansion:secretWarsVol2];
+    Hero *hero6_14 = [[Hero alloc] initWithDisplayName:@"Elsa Bloodstone" insertIntoExpansion:secretWarsVol2];
+    Hero *hero6_15 = [[Hero alloc] initWithDisplayName:@"The Captain and the Devil" insertIntoExpansion:secretWarsVol2];
+    Hero *hero6_16 = [[Hero alloc] initWithDisplayName:@"Arkon the Magnificent" insertIntoExpansion:secretWarsVol2];
+    
+    //make necessary connections
+    //TODO
+    [mastermind6_1 addAlwaysLeadsObject:villainGroup6_1];
+    
 #pragma mark Guardians of the Galaxy
-
-#pragma mark Fantastic Four
+    
+    //init all data
+    Expansion *guardiansOfTheGalaxy = [[Expansion alloc] initWithDisplayName:@"Guardians of the Galaxy]"];
+    [guardiansOfTheGalaxy setReleaseDate:[[NSDate alloc] initWithYear:2014 month:10 day:15]];
+    
+    Scheme *scheme7_1 = [[Scheme alloc] initWithDisplayName:@"Unite the Shards" insertIntoExpansion:guardiansOfTheGalaxy];
+    Scheme *scheme7_2 = [[Scheme alloc] initWithDisplayName:@"Forge the Infinity Gauntlet" insertIntoExpansion:paintTheTownRed];
+    Scheme *scheme7_3 = [[Scheme alloc] initWithDisplayName:@"Intergalactic Kree Nega-Bomb" insertIntoExpansion:guardiansOfTheGalaxy];
+    Scheme *scheme7_4 = [[Scheme alloc] initWithDisplayName:@"The Kree-Skrull War" insertIntoExpansion:guardiansOfTheGalaxy];
+    
+    Mastermind *mastermind7_1 = [[Mastermind alloc] initWithDisplayName:@"Supreme Intelligence of the Kree" insertIntoExpansion:guardiansOfTheGalaxy];
+    Mastermind *mastermind7_2 = [[Mastermind alloc] initWithDisplayName:@"Thanos" insertIntoExpansion:guardiansOfTheGalaxy];
+    
+    VillainGroup *villainGroup7_1 = [[VillainGroup alloc] initWithDisplayName:@"Infinity Gems" insertIntoExpansion:guardiansOfTheGalaxy];
+    VillainGroup *villainGroup7_2 = [[VillainGroup alloc] initWithDisplayName:@"Kree Starforce" insertIntoExpansion:guardiansOfTheGalaxy];
+    
+    Hero *hero7_1 = [[Hero alloc] initWithDisplayName:@"Drax the Destroyer" insertIntoExpansion:guardiansOfTheGalaxy];
+    Hero *hero7_2 = [[Hero alloc] initWithDisplayName:@"Gamora" insertIntoExpansion:guardiansOfTheGalaxy];
+    Hero *hero7_3 = [[Hero alloc] initWithDisplayName:@"Groot" insertIntoExpansion:guardiansOfTheGalaxy];
+    Hero *hero7_4 = [[Hero alloc] initWithDisplayName:@"Rocket Raccoon" insertIntoExpansion:guardiansOfTheGalaxy];
+    Hero *hero7_5 = [[Hero alloc] initWithDisplayName:@"Star-Lord" insertIntoExpansion:guardiansOfTheGalaxy];
+    
+    //make necessary connections
+    //TODO
+    [mastermind7_1 addAlwaysLeadsObject:villainGroup7_2];
+    [mastermind7_2 addAlwaysLeadsObject:villainGroup7_1];
+    
+#pragma mark Villains
+    
     
 }
 
