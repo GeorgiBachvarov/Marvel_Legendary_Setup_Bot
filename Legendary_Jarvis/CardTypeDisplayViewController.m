@@ -39,6 +39,8 @@
         self.sourceArray = [[DataManager sharedInstance] fetchAllEnemyGroups];
     }
     
+    self.sourceArray = [self.sourceArray sortedArrayUsingDescriptors:@[ [NSSortDescriptor sortDescriptorWithKey:@"displayName" ascending:YES]]];
+    
     NSMutableArray *jaggedArray = [NSMutableArray array];
     NSArray *expansions = [[[DataManager sharedInstance] fetchAllExpansions] filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"isOwned == YES"]];
     self.expansions = expansions;

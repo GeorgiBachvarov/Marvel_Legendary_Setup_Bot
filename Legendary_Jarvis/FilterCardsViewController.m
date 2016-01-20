@@ -39,10 +39,13 @@
 }
 
 - (void) reloadData {
-    self.bannedHeroes = [[DataManager sharedInstance] fetchAllBannedHeroes];
-    self.bannedMasterminds = [[DataManager sharedInstance] fetchAllBannedMasterminds];
-    self.bannedSchemes = [[DataManager sharedInstance] fetchAllBannedSchemes];
-    self.bannedVillains = [[DataManager sharedInstance] fetchAllBannedEnemyGroups];
+    
+    NSSortDescriptor *sortDescriptorDisplayName = [NSSortDescriptor sortDescriptorWithKey:@"displayName" ascending:YES];
+    
+    self.bannedHeroes = [[[DataManager sharedInstance] fetchAllBannedHeroes] sortedArrayUsingDescriptors:@[sortDescriptorDisplayName]];
+    self.bannedMasterminds = [[[DataManager sharedInstance] fetchAllBannedMasterminds] sortedArrayUsingDescriptors:@[sortDescriptorDisplayName]];
+    self.bannedSchemes = [[[DataManager sharedInstance] fetchAllBannedSchemes] sortedArrayUsingDescriptors:@[sortDescriptorDisplayName]];
+    self.bannedVillains = [[[DataManager sharedInstance] fetchAllBannedEnemyGroups] sortedArrayUsingDescriptors:@[sortDescriptorDisplayName]];
     [self.tableView reloadData];
 }
 
