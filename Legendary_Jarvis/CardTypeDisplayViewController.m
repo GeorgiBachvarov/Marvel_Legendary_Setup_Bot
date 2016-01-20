@@ -40,7 +40,7 @@
     }
     
     NSMutableArray *jaggedArray = [NSMutableArray array];
-    NSArray *expansions = [[DataManager sharedInstance] fetchAllExpansions];
+    NSArray *expansions = [[[DataManager sharedInstance] fetchAllExpansions] filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"isOwned == YES"]];
     self.expansions = expansions;
     
     for (id expansion in expansions) {
