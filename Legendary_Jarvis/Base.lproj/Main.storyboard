@@ -566,8 +566,8 @@ from the list below!</string>
     <resources>
         <image name="Dr. Doom" width="128" height="128"/>
         <image name="background" width="439" height="262"/>
-        <image name="comicBookBubble_normal_left" width="170" height="170"/>
-        <image name="comicBookBubble_normal_right" width="170" height="170"/>
+        <image name="comicBookBubble_normal_left" width="170" height="162"/>
+        <image name="comicBookBubble_normal_right" width="170" height="162"/>
         <image name="cross" width="320" height="217"/>
         <image name="helicarrier" width="252" height="358"/>
     </resources>

@@ -62,6 +62,23 @@
     }];
 }
 
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    if (self.view.gestureRecognizers.count) {
+        //workaround for the custom gesture iOS gives us
+        [self.view removeGestureRecognizer:[self.view.gestureRecognizers firstObject]];
+    }
+    
+    
+    
+    [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
+}
+
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    [[UIApplication sharedApplication] setIdleTimerDisabled:NO];
+}
+
 - (void) reloadAll{
     self.mastermindImageView.image = [UIImage imageNamed:self.mastermind.displayName];
     self.schemeLabel.text = self.scheme.displayName;
